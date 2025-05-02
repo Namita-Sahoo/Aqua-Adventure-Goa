@@ -13,19 +13,19 @@ window.addEventListener('scroll', function() {
 //home section video content 
 const videos = [
     {
-      src: "./assets/video1.mp4",
+      src: "./assets/video/video1.mp4",
       heading: "Ride the Thrill of Ocean Waves",
       description: "Experience the adrenaline rush as surfers conquer towering waves, showcasing skill and passion in every move.",
       buttonText: "Read More"
     },
     {
-      src: "./assets/video2.mp4",
+      src: "./assets/video/video3.mp4",
       heading: "Dive into an Underwater Wonderland",
       description: "Join scuba divers as they explore a vibrant marine ecosystem, teeming with colorful fish and intricate coral formations.",
       buttonText: "Discover More"
     },
     {
-      src: "./assets/video3.mp4",
+      src: "./assets/video/video3.mp4",
       heading: "Soar Above the Sea: A Parasailing Adventure",
       description: "Glide above the sea with wind in your hair and ocean below — parasailing offers unmatched thrills and breathtaking views.",
       buttonText: "Start Journey"
