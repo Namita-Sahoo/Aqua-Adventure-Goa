@@ -19,7 +19,7 @@ const videos = [
       buttonText: "Read More"
     },
     {
-      src: "./assets/video/video3.mp4",
+      src: "./assets/video/video2.mp4",
       heading: "Dive into an Underwater Wonderland",
       description: "Join scuba divers as they explore a vibrant marine ecosystem, teeming with colorful fish and intricate coral formations.",
       buttonText: "Discover More"
