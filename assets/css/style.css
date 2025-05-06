@@ -124,10 +124,48 @@ a {
   position: absolute;
   top: 10px;
   left: 15px;
-  color: #fff;
+  color: #fff !important;
   cursor: pointer;
 }
+.sidebar .stay-in-touch,
+.sidebar .adventure-goa {
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
 
+.sidebar .stay-in-touch h2,
+.sidebar .adventure-goa h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #00ffff; /* Aqua accent */
+}
+
+.sidebar .stay-in-touch p,
+.sidebar .adventure-goa p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+/* Social Icons */
+.sidebar .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar .social-icon {
+  font-size: 1.6rem;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.sidebar .social-icon:hover {
+  color: #00ffff; /* Aqua hover effect */
+  transform: scale(1.2);
+}
 /* ----------------------------------------------Home Section css start --------------------------------------- */
 #home {
   position: relative;
