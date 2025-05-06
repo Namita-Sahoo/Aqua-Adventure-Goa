@@ -137,7 +137,7 @@ a {
 .sidebar .adventure-goa h2 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #00ffff; /* Aqua accent */
+  color: #00a6ff;
 }
 
 .sidebar .stay-in-touch p,
@@ -163,7 +163,7 @@ a {
 }
 
 .sidebar .social-icon:hover {
-  color: #00ffff; /* Aqua hover effect */
+  color: #00a6ff; /* Aqua hover effect */
   transform: scale(1.2);
 }
 /* ----------------------------------------------Home Section css start --------------------------------------- */
