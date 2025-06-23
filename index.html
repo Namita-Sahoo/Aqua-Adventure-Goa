@@ -18,10 +18,11 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#explore">Explore</a></li>
+      <li><a href="#deals">Exclusive Deals</a></li>
       <li><a href="#contact-us">Contact</a></li>
     </ul>
   </div>
-
+ 
   <!-- Sidebar (Hidden by Default) -->
   <div id="sidebar" class="sidebar">
     <span class="close-btn" onclick="toggleNav()">&times;</span>
@@ -29,6 +30,7 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#explore">Explore</a></li>
+       <li><a href="#deals">Exclusive Deals</a></li>
       <li><a href="#contact-us">Contact</a></li>
     </ul>
 
@@ -41,9 +43,9 @@
         <p>Explore the exciting adventures awaiting you in Goa! Let us guide you through unforgettable experiences.</p>
     </div>
     <div class="social-icons">
-      <a href="https://twitter.com/aquasportsgoa" class="social-icon twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com/aquaadventuregoa/" class="social-icon instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/61572874132092" class="social-icon linkedin" target="_blank"><i class="fab fa-facebook-f"></i></a>
+     <a href="https://youtube.com/@goaexplorers?si=KaJ2-dlSNOkFg_m8" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/goa_explorers_official?igsh=MWUyYmFjbGliZnA1eA%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/1ZD6eZBA3d/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
       
     </div>
   </div>
@@ -80,10 +82,13 @@
       <img src="./assets/images/about-purpose-5.jpg" alt="Adventure" class="adventure-img" />
     </div>
     <div class="about-text">
-      <h2>What is Aqua Adventure?</h2>
+      <h2>Welcome to Goa Explorer</h2>
       <p>
-        Aqua Adventure is a premier online portal offering seamless booking for water sports and cruise reservations in Goa. Travelers can plan their aquatic adventures in advance, avoiding last-minute hassle. With thrilling activities and scenic cruises, Aqua Adventure ensures an unforgettable and stress-free experience along the coast.
+        Welcome to Goa Explorer, your trusted partner for unforgettable aquatic adventures in Goa! We are a premier online booking platform specializing in water sports, private cruises, and sightseeing experiences along Goa’s stunning coastline and backwaters.
       </p>
+      <p>At Goa Explorer, we believe that every trip should be hassle-free, exciting, and tailored to your preferences. 
+        Our carefully curated collection includes thrilling watersports packages, sunset and dinner cruises, luxurious private yachts, and guided sightseeing tours, making it easy for travelers to plan their perfect Goan getaway in advance.</p>
+      
     </div>
   </section>
   
@@ -94,216 +99,37 @@
     </div>
   </section>
 
- <section id="explore" class="explore-section">
-      <h2 class="section-heading">Explore Our Scuba and  Water Sports Packages</h2>
+  
 
-      <div class="card-container">
+<section id="explore" class="explore-section">
 
-          <div class="card"
-          onclick="openPopupFromCard(this)"
-          data-image="./assets/images/scuba &water.jpg"
-          data-title="Scuba & Water Sports Combo"
-          data-description="Enjoy an exciting day with guided scuba diving and water sports."
-          data-price="INR 1699"
-          data-original-price="1999">
+  <div class="category-buttons">
+    <button onclick="showCategory('dinner')">Dinner Cruises</button>
+    <button onclick="showCategory('boats')">Private Boats</button>
+    <button onclick="showCategory('yachts')">Private Yachts</button>
+    <button onclick="showCategory('activities')">Activities</button>
+    <button onclick="showCategory('sunset')">Sunset Cruises</button>
+    <button onclick="showCategory('tours')">Tour Plans</button>
+  </div>
 
-            <div class="card-image">
-              <img src="./assets/images/scuba &water.jpg" alt="Tour Image">
-              <div class="overlay">
-                <button class="explore-btn">Explore</button>
-              </div>
-            </div>
+  <div class="cards-wrapper">
 
-            <div class="card-tags">
-              <span>⏱ 6 Hrs</span>
-              <span>👤 Guide</span>
-              <span>🎯 10+ Yrs</span>
-            </div>
-
-            <h2>Scuba & Water Sports Combo</h2>
-            <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
-            <hr>
-            <div class="price-rating">
-              <span class="from-text">From</span>
-              <span class="discount-price">INR 1699</span>
-              <span class="original-price">1999</span>
-            </div>
-          </div>
-
-          <!-- ------------------------------------------------ -->
-          <div class="card"
-              onclick="openPopupFromCard(this)"
-              data-image="./assets/images/advanced-water-sport.jpg"
-              data-title="Advanced Water Sports Combo"
-              data-description="Push your limits with our premium water sports experience."
-              data-price="INR 1499"
-              data-original-price="1999">
-
-            <div class="card-image">
-              <img src="./assets/images/advanced-water-sport.jpg" alt="Tour Image">
-              <div class="overlay">
-                <button class="explore-btn">Explore</button>
-              </div>
-            </div>
-
-            <div class="card-tags">
-              <span>⏱ 6 Hrs</span>
-              <span>👤 Guide</span>
-              <span>🎯 10+ Yrs</span>
-            </div>
-
-            <h2>Advanced Water Sports Combo</h2>
-            <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
-            <hr>
-            <div class="price-rating">
-              <span class="from-text">From</span>
-              <span class="discount-price">INR 1499</span>
-              <span class="original-price">1999</span>
-            </div>
-          </div>
-
-          <!-- ------------------------------------------------------ -->
-          <div class="card"
-              onclick="openPopupFromCard(this)"
-              data-image="./assets/images/basic-water.png"
-              data-title="Basic Water Sports Combo"
-              data-description="Perfect for beginners – safe, fun, and guided."
-              data-price="INR 1149"
-              data-original-price="1499">
-
-            <div class="card-image">
-              <img src="./assets/images/basic-water.png" alt="Tour Image">
-              <div class="overlay">
-                <button class="explore-btn">Explore</button>
-              </div>
-            </div>
-
-            <div class="card-tags">
-              <span>⏱ 6 Hrs</span>
-              <span>👤 Guide</span>
-              <span>🎯 8+ Yrs</span>
-            </div>
-
-            <h2>Basic Water Sports Combo</h2>
-            <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
-            <hr>
-            <div class="price-rating">
-              <span class="from-text">From</span>
-              <span class="discount-price">INR 1149</span>
-              <span class="original-price">1499</span>
-            </div>
-          </div>
-
-          <!-- --------------------------------------------------- -->
-          <div class="card"
-                onclick="openPopupFromCard(this)"
-                data-image="./assets/images/scuba-grabd.jpg"
-                data-title="Scuba and Grand Island Combo"
-                data-description="Explore Grand Island with a thrilling scuba adventure."
-                data-price="INR 1199"
-                data-original-price="1499">
-
-            <div class="card-image">
-              <img src="./assets/images/scuba-grabd.jpg" alt="Tour Image">
-              <div class="overlay">
-                <button class="explore-btn">Explore</button>
-              </div>
-            </div>
-
-            <div class="card-tags">
-              <span>⏱ 6 Hrs</span>
-              <span>👤 Guide</span>
-              <span>🎯 10+ Yrs</span>
-            </div>
-
-            <h2>Scuba and Grand Island Combo</h2>
-            <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
-            <hr>
-            <div class="price-rating">
-              <span class="from-text">From</span>
-              <span class="discount-price">INR 1199</span>
-              <span class="original-price">1499</span>
-            </div>
-          </div>
-
-          <!-- ------------------------------------------------------- -->
-          <div class="card"
-              onclick="openPopupFromCard(this)"
-              data-image="./assets/images/Parasailing.jpg"
-              data-title="Parasailing"
-              data-description="Soar above the waves and take in the stunning coastline."
-              data-price="INR 999"
-              data-original-price="1100">
-
-            <div class="card-image">
-              <img src="./assets/images/Parasailing.jpg" alt="Tour Image">
-              <div class="overlay">
-                <button class="explore-btn">Explore</button>
-              </div>
-            </div>
-
-            <div class="card-tags">
-              <span>⏱ 6 Hrs</span>
-              <span>👤 Guide</span>
-              <span>🎯 10+ Yrs</span>
-            </div>
-
-            <h2>Parasailing</h2>
-            <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
-            <hr>
-            <div class="price-rating">
-              <span class="from-text">From</span>
-              <span class="discount-price">INR 999</span>
-              <span class="original-price">1100</span>
-            </div> 
-          </div>
-          
-          <!-- ---------------------------------------------------------- -->
-          <div class="card"
-              onclick="openPopupFromCard(this)"
-              data-image="./assets/images/jetski.jpg"
-              data-title="Jetski"
-              data-description="Ride the waves on a powerful jetski adventure."
-              data-price="INR 499"
-               data-original-price="799">
-
-            <div class="card-image">
-              <img src="./assets/images/jetski.jpg" alt="Tour Image">
-              <div class="overlay">
-                <button class="explore-btn">Explore</button>
-              </div>
-            </div>
-            <div class="card-tags">
-              <span>⏱ 6 Hrs</span>
-              <span>👤 Guide</span>
-              <span>🎯 10+ Yrs</span>
-            </div>
-            <h2>Jetski</h2>
-            <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
-            <hr>
-            <div class="price-rating">
-              <span class="from-text">From</span>
-              <span class="discount-price">INR 499</span>
-              <span class="original-price">799</span>
-            </div> 
-          </div>
-        </div>
-
-       <!-- --------------------------------------------------yatch card ------------------- -->
-        <h2 class="section-heading">Explore Our Cruising And Yatch in Goa</h2>
+    <!-- ----------------------dinner cruise card ------------------- -->
+    <div id="dinner" class="card-section" style="display: flex;">
+        <h2 class="section-heading">Explore Our Private Dinner Cruising in Goa</h2>
 
         <div class="card-container">
 
             <div class="card"
                 onclick="openPopupFromCard(this)"
-                data-image="./assets/images/candle-dinner.jpg"
-                data-title="Dinner Cruise"
-                data-description="Enjoy a romantic evening with candle-lit dining on a serene cruise."
+                data-image="./assets/images/dinner_cruise/leomar.jpg"
+                data-title="Leomar Dinner Cruise"
+                data-description="A scenic evening cruise offering sunset views and live entertainment."
                 data-price="INR 1199"
                 data-original-price="1499">
 
               <div class="card-image">
-                <img src="./assets/images/candle-dinner.jpg" alt="Tour Image">
+                <img src="./assets/images/dinner_cruise/leomar.jpg" alt="leomar dinner">
                 <div class="overlay">
                   <button class="explore-btn">Explore</button>
                 </div>
@@ -315,7 +141,7 @@
                 <span> Panjim</span>
               </div>
 
-              <h2>Dinner Cruise</h2>
+              <h2>Leomar Dinner Cruise</h2>
               <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
               <hr>
               <div class="price-rating">
@@ -328,14 +154,14 @@
             <!-- --------------------------------------------------- -->
             <div class="card"
                   onclick="openPopupFromCard(this)"
-                  data-image="./assets/images/party-dinner.jpg"
-                  data-title="Sunset Cruise"
-                  data-description="Dance and relax on a sunset cruise with live DJ and stunning views."
+                  data-image="./assets/images/dinner_cruise/nauti.jpeg"
+                  data-title="Nauti Amigo Luxury Dinner Cruise"
+                  data-description="A premium cruise experience with gourmet dining and onboard performances."
                   data-price="INR 2199"
-                data-original-price="2999">
+                  data-original-price="2999">
 
               <div class="card-image">
-                <img src="./assets/images/dinner-cruise.jpg" alt="Tour Image">
+                <img src="./assets/images/dinner_cruise/nauti.jpeg" alt="Nauti dinner Image">
                 <div class="overlay">
                   <button class="explore-btn">Explore</button>
                 </div>
@@ -347,7 +173,7 @@
                 <span>📍 Panjim</span>
               </div>
 
-              <h2>Luxury Dinner Cruise</h2>
+              <h2>Nauti Amigo Luxury Dinner Cruise</h2>
               <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
               <hr>
               <div class="price-rating">
@@ -360,14 +186,14 @@
             <!-- -------------------------------------------- -->
             <div class="card"
                 onclick="openPopupFromCard(this)"
-                data-image="./assets/images/family-dinner.png"
-                data-title="Family Dinner Cruise"
-                data-description="A joyful dinner cruise perfect for family bonding and entertainment."
+                data-image="./assets/images/dinner_cruise/Cover.jpeg"
+                data-title="Nirvana Dinner Cruise"
+                data-description="A relaxing dinner cruise designed for serene waterside dining and calm ambiance."
                 data-price="INR 1349"
                 data-original-price="1499">
 
               <div class="card-image">
-                <img src="./assets/images/family-dinner.png" alt="Tour Image">
+                <img src="./assets/images/dinner_cruise/Cover.jpeg" alt="Nirvana luxury dinner cruise Image">
                 <div class="overlay">
                   <button class="explore-btn">Explore</button>
                 </div>
@@ -379,7 +205,7 @@
                 <span>📍 Panjim</span>
               </div>
 
-              <h2>Family Dinner Cruise</h2>
+              <h2>Nirvana Dinner Cruise</h2>
               <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
               <hr>
               <div class="price-rating">
@@ -392,15 +218,15 @@
             <!-- ----------------------------------------------- -->
             <div class="card"
                     onclick="openPopupFromCard(this)"
-                    data-image="./assets/images/luxury-dinner-cruise.png"
-                    data-title="Candle Light Dinner Cruise"
-                    data-description="Make it memorable with a candlelight dinner on a scenic cruise."
+                    data-image="./assets/images/dinner_cruise/ohana.jpeg"
+                    data-title="Ohana Dinner Cruise"
+                    data-description="A family-friendly cruise with food, games, and live cultural acts."
                     data-price="INR 1999"
                    data-original-price="2499">
 
               <div class="card-image">
 
-                <img src="./assets/images/luxury-dinner-cruise.png" alt="Tour Image">
+                <img src="./assets/images/dinner_cruise/ohana.jpeg" alt="Ohana dinner Image">
                 <div class="overlay">
                   <button class="explore-btn">Explore</button>
                 </div>
@@ -411,7 +237,7 @@
                 <span>🍽️ Meals</span>
                 <span>📍 Panjim</span>
               </div>
-              <h2>Candle Light Dinner Cruise</h2>
+              <h2>Ohana Dinner Cruise</h2>
               <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
               <hr>
               <div class="price-rating">
@@ -424,14 +250,14 @@
             <!-- --------------------------------------------- -->
             <div class="card"
                 onclick="openPopupFromCard(this)"
-                data-image="./assets/images/party-dinner.jpg"
-                data-title="Sunset Cruise"
-                data-description="Dance and relax on a sunset cruise with live DJ and stunning views."
+                data-image="./assets/images/dinner_cruise/paradise-cruise-goa-5.jpeg"
+                data-title="Paradise Family Cruise"
+                data-description="Perfect for family gatherings with buffet dinner and music."
                 data-price="INR 499"
                 data-original-price="699">
 
               <div class="card-image">
-                <img src="./assets/images/party-dinner.jpg" alt="Tour Image">
+                <img src="./assets/images/dinner_cruise/paradise-cruise-goa-5.jpeg" alt="Paradise family cruise Image">
                 <div class="overlay">
                   <button class="explore-btn">Explore</button>
                 </div>
@@ -443,7 +269,7 @@
                 <span>🎶 Live DJ</span>
               </div>
 
-              <h2>Sunset Cruise</h2>
+              <h2>Paradise Family Cruise</h2>
               <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
               <hr>
               <div class="price-rating">
@@ -456,14 +282,14 @@
             <!-- ------------------------------------------------- -->
             <div class="card"
                   onclick="openPopupFromCard(this)"
-                  data-image="./assets/images/private-cruise.jpg"
-                  data-title="Party Cruise"
-                  data-description="Celebrate with friends on a lively party cruise around Panjim."
+                  data-image="./assets/images/dinner_cruise/princess.JPG"
+                  data-title="Princess Family  Cruise"
+                  data-description="A romantic dinner cruise ideal for couples and special occasions."
                   data-price="INR 1499"
                  data-original-price="1999">
 
               <div class="card-image">
-                <img src="./assets/images/private-cruise.jpg" alt="Tour Image">
+                <img src="./assets/images/dinner_cruise/princess.JPG" alt="princess dinner family Image">
                 <div class="overlay">
                   <button class="explore-btn">Explore</button>
                 </div>
@@ -475,7 +301,7 @@
                 <span>🎶 Live DJ</span>
               </div>
 
-              <h2>Party Cruise</h2>
+              <h2>Princess Family  Cruise</h2>
               <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
               <hr>
               <div class="price-rating">
@@ -488,14 +314,14 @@
             <!-- --------------------------------------------------- -->
             <div class="card"
                 onclick="openPopupFromCard(this)"
-                data-image="./assets/images/sunset-dinner.jpg"
-                data-title="Private Yacht"
-                data-description="Book your private yacht and enjoy luxury, music, and privacy."
+                data-image="./assets/images/dinner_cruise/samraat.jpg"
+                data-title="Samraat Dinner"
+                data-description=" A spacious cruise offering a mix of traditional and modern entertainment."
                 data-price="INR 15000"
                 data-original-price="25000">
 
               <div class="card-image">
-                <img src="./assets/images/sunset-dinner.jpg" alt="Tour Image">
+                <img src="./assets/images/dinner_cruise/samraat.jpg" alt="samraat dinner family Image">
                 <div class="overlay">
                   <button class="explore-btn">Explore</button>
                 </div>
@@ -507,7 +333,7 @@
                 <span>🎶 Music</span>
               </div>
 
-              <h2>Private Yatch</h2>
+              <h2>Samraat Dinner</h2>
               <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
               <hr>
               <div class="price-rating">
@@ -517,12 +343,952 @@
               </div> 
             </div>
 
+
+              <!-- --------------------------------------------------- -->
+            <div class="card"
+                  onclick="openPopupFromCard(this)"
+                  data-image="./assets/images/dinner_cruise/swasti.jpeg"
+                  data-title="Swastik Family Cruise"
+                  data-description="A wholesome cruise tailored for family dinners with kid-friendly activities."
+                  data-price="INR 15000"
+                  data-original-price="25000">
+
+                <div class="card-image">
+                  <img src="./assets/images/dinner_cruise/swasti.jpeg" alt="Swastik Family Cruise Image">
+                  <div class="overlay">
+                    <button class="explore-btn">Explore</button>
+                  </div>
+                </div>
+
+                <div class="card-tags">
+                  <span>⏱ 2 Hrs</span>
+                  <span>📍 Panjim</span>
+                  <span>🎶 Music</span>
+                </div>
+
+                <h2>Swastik Family Cruise</h2>
+                <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+                <hr>
+                <div class="price-rating">
+                  <span class="from-text">From</span>
+                  <span class="discount-price">INR 15000</span>
+                  <span class="original-price">25000</span>
+                </div> 
+              </div>
+
+              <!-- ----------------------------------------------- -->
+               <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/dinner_cruise/vihaan.jpeg"
+                data-title="Vihaan Family Cruise"
+                data-description="A cozy, private family cruise with authentic Goan cuisine."
+                data-price="INR 15000"
+                data-original-price="25000">
+
+              <div class="card-image">
+                <img src="./assets/images/dinner_cruise/vihaan.jpeg" alt="Vihaan Family Cruise Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 2 Hrs</span>
+                <span>📍 Panjim</span>
+                <span>🎶 Music</span>
+              </div>
+
+              <h2>Vihaan Family Cruise</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 15000</span>
+                <span class="original-price">25000</span>
+              </div> 
+            </div>
           </div>
-      </section>
+    </div>
+
+    <!-- ----------------------boats cruise card ------------------- -->
+    <div id="boats" class="card-section" style="display: none;">
+        <h2 class="section-heading">Explore Our Private Boats in Goa</h2>
+
+        <div class="card-container">
+
+            <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/private_boats/lexicon_cruise.JPG"
+                data-title="Lexicon Cruise"
+                data-description="A premium private boat perfect for intimate celebrations and small group parties."
+                data-price="INR 1199"
+                data-original-price="1499">
+
+              <div class="card-image">
+                <img src="./assets/images/private_boats/lexicon_cruise.JPG" alt="lexicon_cruise dinner">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 6 Hrs</span>
+                <span> Meals</span>
+                <span> Panjim</span>
+              </div>
+
+              <h2>Lexicon Cruise</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1199</span>
+                <span class="original-price">1499</span>
+              </div>
+            </div>
+
+            <!-- --------------------------------------------------- -->
+            <div class="card"
+                  onclick="openPopupFromCard(this)"
+                  data-image="./assets/images/dinner_cruise/nauti.jpeg"
+                  data-title="Nauti Amigo Private Boats"
+                  data-description="A stylish speedboat ideal for quick sea getaways and casual private charters."
+                  data-price="INR 2199"
+                  data-original-price="2999">
+
+              <div class="card-image">
+                <img src="./assets/images/dinner_cruise/nauti.jpeg" alt="Nauti dinner Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 3 Hrs</span>
+                <span>🍽️ Meals</span>
+                <span>📍 Panjim</span>
+              </div>
+
+              <h2>Nauti Amigo Private Boats</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 2199</span>
+                <span class="original-price">2999</span>
+              </div>
+            </div>
+
+            <!-- -------------------------------------------- -->
+            <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/dinner_cruise/Cover.jpeg"
+                data-title="Nirvana Cruise"
+                data-description="A serene private cruise offering peaceful river and bay tours."
+                data-price="INR 1349"
+                data-original-price="1499">
+
+              <div class="card-image">
+                <img src="./assets/images/dinner_cruise/Cover.jpeg" alt="Nirvana luxury dinner cruise Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 3 Hrs</span>
+                <span>🍽️ Meals</span>
+                <span>📍 Panjim</span>
+              </div>
+
+              <h2>Nirvana Cruise</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1349</span>
+                <span class="original-price">1499</span>
+              </div>
+            </div>
+
+            <!-- ----------------------------------------------- -->
+            <div class="card"
+                    onclick="openPopupFromCard(this)"
+                    data-image="./assets/images/dinner_cruise/ohana.jpeg"
+                    data-title="Ohana Cruise"
+                    data-description="A cozy family boat with space for games, dining, and water activities"
+                    data-price="INR 1999"
+                   data-original-price="2499">
+
+              <div class="card-image">
+
+                <img src="./assets/images/dinner_cruise/ohana.jpeg" alt="Ohana dinner Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 3 Hrs</span>
+                <span>🍽️ Meals</span>
+                <span>📍 Panjim</span>
+              </div>
+              <h2>Ohana Cruise</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1999</span>
+                <span class="original-price">2499</span>
+              </div>
+            </div>
+
+            <!-- --------------------------------------------- -->
+            <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/dinner_cruise/paradise-cruise-goa-5.jpeg"
+                data-title="Paradise Cruise"
+                data-description="A versatile private cruise suited for both parties and relaxing sightseeing trips."
+                data-price="INR 499"
+                data-original-price="699">
+
+              <div class="card-image">
+                <img src="./assets/images/dinner_cruise/paradise-cruise-goa-5.jpeg" alt="Paradise family cruise Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 1 Hrs</span>
+                <span>📍 Panjim</span>
+                <span>🎶 Live DJ</span>
+              </div>
+
+              <h2>Paradise Cruise</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 499</span>
+                <span class="original-price">699</span>
+              </div> 
+            </div>
+            
+            <!-- ------------------------------------------------- -->
+            <div class="card"
+                  onclick="openPopupFromCard(this)"
+                  data-image="./assets/images/private_boats/ra_11_super.jpg"
+                  data-title="RA 11 Super yacht"
+                  data-description="A luxury yacht featuring opulent interiors and facilities for elite gatherings."
+                  data-price="INR 1499"
+                 data-original-price="1999">
+
+              <div class="card-image">
+                <img src="./assets/images/private_boats/ra_11_super.jpg" alt="ra_11_super Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 1 Hrs</span>
+                <span>📍 Panjim</span>
+                <span>🎶 Live DJ</span>
+              </div>
+
+              <h2>RA 11 Super yacht</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1499</span>
+                <span class="original-price">1999</span>
+              </div> 
+            </div>
+
+          </div>
+    </div>
+
+    <!-- ----------------------yachts cruise card ------------------- -->
+    <div id="yachts" class="card-section" style="display: none;">
+        <h2 class="section-heading">Explore Our Private Dinner Cruising in Goa</h2>
+
+        <div class="card-container">
+
+            <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/private-yatch/ahilo_catamaran.webp"
+                data-title="Ahilo Catamaran yatch"
+                data-description="A spacious twin-hull vessel ideal for group parties, fishing trips, and sunset cruises."
+                data-price="INR 1199"
+                data-original-price="1499">
+
+              <div class="card-image">
+                <img src="./assets/images/private-yatch/ahilo_catamaran.webp" alt="Ahilo Catamaran yatch">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 6 Hrs</span>
+                <span> Meals</span>
+                <span> Panjim</span>
+              </div>
+
+              <h2>Ahilo Catamaran yatch</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1199</span>
+                <span class="original-price">1499</span>
+              </div>
+            </div>
+
+            <!-- --------------------------------------------------- -->
+            <div class="card"
+                  onclick="openPopupFromCard(this)"
+                  data-image="./assets/images/private-yatch/Amzonite2.jpeg"
+                  data-title="Amazonite yatch"
+                  data-description=" A premium mid-sized yacht perfect for private celebrations and corporate charters"
+                  data-price="INR 2199"
+                  data-original-price="2999">
+
+              <div class="card-image">
+                <img src="./assets/images/private-yatch/Amzonite2.jpeg" alt="Amazonite yatch Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 3 Hrs</span>
+                <span>🍽️ Meals</span>
+                <span>📍 Panjim</span>
+              </div>
+
+              <h2>Amazonite yatch</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 2199</span>
+                <span class="original-price">2999</span>
+              </div>
+            </div>
+
+            <!-- -------------------------------------------- -->
+            <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/private-yatch/baystar_speed_boat.webp"
+                data-title="Family Dinner Cruise"
+                data-description="A high-speed boat designed for quick sea adventures and sporty rides."
+                data-price="INR 1349"
+                data-original-price="1499">
+
+              <div class="card-image">
+                <img src="./assets/images/private-yatch/baystar_speed_boat.webp" alt="Baystar Speed Boat Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 3 Hrs</span>
+                <span>🍽️ Meals</span>
+                <span>📍 Panjim</span>
+              </div>
+
+              <h2>Baystar Speed Boat yatch</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1349</span>
+                <span class="original-price">1499</span>
+              </div>
+            </div>
+
+            <!-- ----------------------------------------------- -->
+            <div class="card"
+                    onclick="openPopupFromCard(this)"
+                    data-image="./assets/images/private-yatch/blue-diamond-luxury.webp"
+                    data-title="Blue Diamond Luxury Yacht "
+                    data-description="A lavish yacht with premium interiors and luxury amenities for elite parties"
+                    data-price="INR 1999"
+                   data-original-price="2499">
+
+              <div class="card-image">
+
+                <img src="./assets/images/private-yatch/blue-diamond-luxury.webp" alt="Blue Diamond Luxury Yacht ">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 3 Hrs</span>
+                <span>🍽️ Meals</span>
+                <span>📍 Panjim</span>
+              </div>
+              <h2>Blue Diamond Luxury Yacht </h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1999</span>
+                <span class="original-price">2499</span>
+              </div>
+            </div>
+
+            <!-- --------------------------------------------- -->
+            <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/dinner_cruise/paradise-cruise-goa-5.jpeg"
+                data-title="Bluefin Mini Yacht"
+                data-description="A compact, elegant yacht ideal for intimate get-togethers and private sunset tours."
+                data-price="INR 499"
+                data-original-price="699">
+
+              <div class="card-image">
+                <img src="./assets/images/dinner_cruise/paradise-cruise-goa-5.jpeg" alt="Bluefin Mini Yacht">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 1 Hrs</span>
+                <span>📍 Panjim</span>
+                <span>🎶 Live DJ</span>
+              </div>
+
+              <h2>Bluefin Mini Yacht</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 499</span>
+                <span class="original-price">699</span>
+              </div> 
+            </div>
+            
+            <!-- ------------------------------------------------- -->
+            <div class="card"
+                  onclick="openPopupFromCard(this)"
+                  data-image="./assets/images/private-yatch/funliner.webp"
+                  data-title="Party Cruise"
+                  data-description="A lively yacht equipped for parties, DJ setups, and group gatherings on water."
+                  data-price="INR 1499"
+                 data-original-price="1999">
+
+              <div class="card-image">
+                <img src="./assets/images/private-yatch/funliner.webp" alt="Funliner Yacht ">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 1 Hrs</span>
+                <span>📍 Panjim</span>
+                <span>🎶 Live DJ</span>
+              </div>
+
+              <h2>Funliner Yacht </h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1499</span>
+                <span class="original-price">1999</span>
+              </div> 
+            </div>
+
+            <!-- --------------------------------------------------- -->
+            <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/private-yatch/prestige-36.JPG"
+                data-title="Private Yacht"
+                data-description="A sophisticated yacht with spacious decks and plush interiors for exclusive groups."
+                data-price="INR 15000"
+                data-original-price="25000">
+
+              <div class="card-image">
+                <img src="./assets/images/private-yatch/prestige-36.JPG" alt="Prestige 36 Yacht ">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 2 Hrs</span>
+                <span>📍 Panjim</span>
+                <span>🎶 Music</span>
+              </div>
+
+              <h2>Prestige 36 Yacht </h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 15000</span>
+                <span class="original-price">25000</span>
+              </div> 
+            </div>
+
+
+              <!-- --------------------------------------------------- -->
+            <div class="card"
+                  onclick="openPopupFromCard(this)"
+                  data-image="./assets/images/private_boats/ra_11_super.jpg""
+                  data-title="RA11 Super Yacht"
+                  data-description="Book your private yacht and enjoy luxury, music, and privacy."
+                  data-price="INR 15000"
+                  data-original-price="25000">
+
+                <div class="card-image">
+                  <img src="./assets/images/private_boats/ra_11_super.jpg" alt="RA11 Super Yacht Image">
+                  <div class="overlay">
+                    <button class="explore-btn">Explore</button>
+                  </div>
+                </div>
+
+                <div class="card-tags">
+                  <span>⏱ 2 Hrs</span>
+                  <span>📍 Panjim</span>
+                  <span>🎶 Music</span>
+                </div>
+
+                <h2>RA11 Super Yacht</h2>
+                <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+                <hr>
+                <div class="price-rating">
+                  <span class="from-text">From</span>
+                  <span class="discount-price">INR 15000</span>
+                  <span class="original-price">25000</span>
+                </div> 
+              </div>
+
+              <!-- ----------------------------------------------- -->
+               <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/private-yatch/nautica_catamaran.jpg"
+                data-title="Sinq nautica Catamaran"
+                data-description="A spacious catamaran perfect for leisure sails, group brunches, and sunset charters."
+                data-price="INR 15000"
+                data-original-price="25000">
+
+              <div class="card-image">
+                <img src="./assets/images/private-yatch/nautica_catamaran.jpg" alt="Sinq nautica Catamaran Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 2 Hrs</span>
+                <span>📍 Panjim</span>
+                <span>🎶 Music</span>
+              </div>
+
+              <h2>Sinq nautica Catamaran</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 15000</span>
+                <span class="original-price">25000</span>
+              </div> 
+            </div>
+
+
+          </div>
+    </div>
+
+    <!-- ----------------------activities cruise card ------------------- -->
+    <div id="activities" class="card-section" style="display: none;">
+        <h2 class="section-heading">Explore Our Private Dinner Cruising in Goa</h2>
+
+        <div class="card-container">
+
+            <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/activities/amboli-waterfall.jpg"
+                data-title="Amboli Waterfall Tour With Scuba Diving & Watersports"
+                data-description=" A full-day monsoon adventure with a scenic waterfall visit, scuba diving, and watersport activities."
+                data-price="INR 1199"
+                data-original-price="1499">
+
+              <div class="card-image">
+                <img src="./assets/images/activities/amboli-waterfall.jpg" alt="amboli-waterfall">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <h2>Amboli Waterfall Tour With Scuba Diving & Watersports </h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1199</span>
+                <span class="original-price">1499</span>
+              </div>
+            </div>
+
+            <!-- --------------------------------------------------- -->
+            <div class="card"
+                  onclick="openPopupFromCard(this)"
+                  data-image="./assets/images/activities/banana-ride-banana-boat-ride-in-goa-package.jpeg"
+                  data-title="Banana ride"
+                  data-description="An adrenaline-packed jump from a height, perfect for adventure lovers seeking a thrill."
+                  data-price="INR 2199"
+                  data-original-price="2999">
+
+              <div class="card-image">
+                <img src="./assets/images/activities/banana-ride-banana-boat-ride-in-goa-package.jpeg" alt="Banana ride Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <h2>Banana ride</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 2199</span>
+                <span class="original-price">2999</span>
+              </div>
+            </div>
+
+            <!-- -------------------------------------------- -->
+            <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/activities/kayaking.jpeg"
+                data-title="Kayaking Activity"
+                data-description="A peaceful and scenic paddling experience through Goa’s rivers, mangroves, and backwaters."
+                data-price="INR 1349"
+                data-original-price="1499">
+
+              <div class="card-image">
+                <img src="./assets/images/activities/kayaking.jpeg" alt="Kayaking Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+
+              <h2>Kayaking Activity</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1349</span>
+                <span class="original-price">1499</span>
+              </div>
+            </div>
+
+            <!-- ----------------------------------------------- -->
+            <div class="card"
+                    onclick="openPopupFromCard(this)"
+                    data-image="./assets/images/activities/scuba-driving.jpeg"
+                    data-title="Scuba Driving Activity"
+                    data-description="An underwater scuba diving experience paired with five exciting surface watersports."
+                    data-price="INR 1999"
+                   data-original-price="2499">
+
+              <div class="card-image">
+
+                <img src="./assets/images/activities/scuba-driving.jpeg" alt="Scuba Driving Activity">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <h2>Scuba Driving Activity</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1999</span>
+                <span class="original-price">2499</span>
+              </div>
+            </div>
+
+           
+          </div>
+    </div>
+
+    <!-- ----------------------sunset cruise card ------------------- -->
+    <div id="sunset" class="card-section" style="display: none;">
+        <h2 class="section-heading">Explore Our Private Dinner Cruising in Goa</h2>
+
+        <div class="card-container">
+
+            <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/dinner_cruise/leomar.jpg"
+                data-title="Leomar sunset"
+                data-description="A lively sunset cruise with music, snacks, and breathtaking riverfront views."
+                data-price="INR 1199"
+                data-original-price="1499">
+
+              <div class="card-image">
+                <img src="./assets/images/dinner_cruise/leomar.jpg" alt="leomar sunset">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <h2>Leomar Sunset</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1199</span>
+                <span class="original-price">1499</span>
+              </div>
+            </div>
+
+            <!-- --------------------------------------------------- -->
+            <div class="card"
+                  onclick="openPopupFromCard(this)"
+                  data-image="./assets/images/dinner_cruise/Cover.jpeg"
+                  data-title="Nirvana Sunset"
+                  data-description="A calm and serene evening cruise ideal for peaceful sunset moments."
+                  data-price="INR 2199"
+                  data-original-price="2999">
+
+              <div class="card-image">
+                <img src="./assets/images/dinner_cruise/Cover.jpeg" alt="Nirvana Sunset">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <h2>Nirvana Sunset</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 2199</span>
+                <span class="original-price">2999</span>
+              </div>
+            </div>
+
+            <!-- -------------------------------------------- -->
+            <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/dinner_cruise/samraat.jpg"
+                data-description=" A spacious and vibrant cruise perfect for group parties and sunset celebrations"
+                data-price="INR 1349"
+                data-original-price="1499">
+
+              <div class="card-image">
+                <img src="./assets/images/dinner_cruise/samraat.jpg" alt="Samrat sunset Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <h2>Samrat sunset</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1349</span>
+                <span class="original-price">1499</span>
+              </div>
+            </div>
+
+            <!-- ----------------------------------------------- -->
+            <div class="card"
+                    onclick="openPopupFromCard(this)"
+                    data-image="./assets/images/dinner_cruise/vihaan.jpeg"
+                    data-title="Vihaan sunset"
+                    data-description="A cozy, private cruise for couples and small groups to enjoy a tranquil sunset."
+                    data-price="INR 1999"
+                   data-original-price="2499">
+
+              <div class="card-image">
+
+                <img src="./assets/images/dinner_cruise/vihaan.jpeg" alt="vihaan  Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <div class="card-tags">
+                <span>⏱ 3 Hrs</span>
+                <span>🍽️ Meals</span>
+                <span>📍 Panjim</span>
+              </div>
+              <h2>Vihaan sunset</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1999</span>
+                <span class="original-price">2499</span>
+              </div>
+            </div>
+
+            <!-- --------------------------------------------- -->
+            <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/dinner_cruise/paradise-cruise-goa-5.jpeg"
+                data-title="Paradise Sunset "
+                data-description="A family-friendly sunset cruise with scenic riverbank views and light refreshments."
+                data-price="INR 499"
+                data-original-price="699">
+
+              <div class="card-image">
+                <img src="./assets/images/dinner_cruise/paradise-cruise-goa-5.jpeg" alt="Paradise sunset Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <h2>Paradise Sunset</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 499</span>
+                <span class="original-price">699</span>
+              </div> 
+            </div>
+
+          </div>
+    </div>
+
+    <!-- ----------------------tours cruise card ------------------- -->
+    <div id="tours" class="card-section" style="display: none;">
+        <h2 class="section-heading">Explore Our Private Dinner Cruising in Goa</h2>
+
+        <div class="card-container">
+
+            <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/tours/dolphin.JPG"
+                data-title="Dolphin Sightseeing"
+                data-description="A fun boat trip offering chances to spot playful dolphins in the Arabian Sea."
+                data-price="INR 1199"
+                data-original-price="1499">
+
+              <div class="card-image">
+                <img src="./assets/images/tours/dolphin.JPG" alt="dolphin tour">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <h2>Dolphin Sightseeing</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1199</span>
+                <span class="original-price">1499</span>
+              </div>
+            </div>
+
+            <!-- --------------------------------------------------- -->
+            <div class="card"
+                  onclick="openPopupFromCard(this)"
+                  data-image="./assets/images/tours/dughsagar.JPG"
+                  data-title="Dudhsagar tour"
+                  data-description="A full-day tour to Goa’s majestic Dudhsagar Waterfalls combined with a visit to a spice plantation."
+                  data-price="INR 2199"
+                  data-original-price="2999">
+
+              <div class="card-image">
+                <img src="./assets/images/tours/dughsagar.JPG" alt="dughsagar tour">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <h2>Dudhsagar tour</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 2199</span>
+                <span class="original-price">2999</span>
+              </div>
+            </div>
+
+            <!-- -------------------------------------------- -->
+            <div class="card"
+                onclick="openPopupFromCard(this)"
+                data-image="./assets/images/tours/north_goa.JPG"
+                data-title="North Goa tour"
+                data-description="A guided day tour covering popular beaches, forts, churches, and markets in North Goa."
+                data-price="INR 1349"
+                data-original-price="1499">
+
+              <div class="card-image">
+                <img src="./assets/images/tours/north_goa.JPG" alt="north goa Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <h2>North Goa tour</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1349</span>
+                <span class="original-price">1499</span>
+              </div>
+            </div>
+
+            <!-- ----------------------------------------------- -->
+            <div class="card"
+                    onclick="openPopupFromCard(this)"
+                    data-image="./assets/images/tours/south-goa.JPGg"
+                    data-title="South Goa Tour"
+                    data-description=" A relaxing sightseeing trip visiting serene beaches, colonial churches, and temples in South Goa."
+                    data-price="INR 1999"
+                   data-original-price="2499">
+
+              <div class="card-image">
+
+                <img src="./assets/images/tours/south-goa.JPG" alt="south goa Image">
+                <div class="overlay">
+                  <button class="explore-btn">Explore</button>
+                </div>
+              </div>
+
+              <h2>South Goa Tour</h2>
+              <div class="rating">⭐⭐⭐⭐ 4.5 Reviews</div>
+              <hr>
+              <div class="price-rating">
+                <span class="from-text">From</span>
+                <span class="discount-price">INR 1999</span>
+                <span class="original-price">2499</span>
+              </div>
+            </div>
+
+            <!-- --------------------------------------------- -->
+
+          </div>
+    </div>
+
+      <!-- card-wrapper end -->
+    </div> 
+                  
+  </section>
 
 <!--------------------------------- Exclusive deals----------------------------->
 
-      <section class="exclusive-carousel-section">
+      <section id ="deals" class="exclusive-carousel-section">
         <h2 class="section-heading1">🔥 Exclusive Deals</h2>
         <p class="section-description">
           Unlock the best offers and discounts on top-rated products. Our exclusive deals are available for a limited time, so don't miss out! Get up to 50% off on select items.
@@ -542,7 +1308,7 @@
                   <span class="discounted">INR 1199</span>
                   <span class="original">1499</span>
                 </div>
-                <button class="book-now-btn">Book Now</button>
+                 <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" target="_blank" class="book-now-btn">Book Now</a>
               </div>
             </div>
 
@@ -557,7 +1323,7 @@
                   <span class="discounted">INR 1199</span>
                   <span class="original">1499</span>
                 </div>
-                <button class="book-now-btn">Book Now</button>
+               <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" target="_blank" class="book-now-btn">Book Now</a>
               </div>
             </div>
 
@@ -572,7 +1338,7 @@
                   <span class="discounted">INR 999</span>
                   <span class="original">1499</span>
                 </div>
-                <button class="book-now-btn">Book Now</button>
+                <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" target="_blank" class="book-now-btn">Book Now</a>
               </div>
             </div>
 
@@ -587,7 +1353,7 @@
                   <span class="discounted">INR 1499</span>
                   <span class="original">1999</span>
                 </div>
-                <button class="book-now-btn">Book Now</button>
+                <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" target="_blank" class="book-now-btn">Book Now</a>
               </div>
             </div>
 
@@ -602,7 +1368,7 @@
                   <span class="discounted">INR 499</span>
                   <span class="original">699</span>
                 </div>
-                <button class="book-now-btn">Book Now</button>
+                <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" target="_blank" class="book-now-btn">Book Now</a>
               </div>
             </div>
 
@@ -617,7 +1383,7 @@
                   <span class="discounted">INR 15000</span>
                   <span class="original">20000</span>
                 </div>
-                <button class="book-now-btn">Book Now</button>
+                <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" target="_blank" class="book-now-btn">Book Now</a>
               </div>
             </div>
 
@@ -635,7 +1401,7 @@
           <h3 id="popupTitle">Tour Title</h3>
           <p id="popupDescription">Tour description goes here.</p>
           <div id="popupPrice" class="popup-price"></div>
-          <a href="https://wa.me/919876543210?text=Hi%20I%20want%20details%20about%20the%20tour" target="_blank" class="book-btn">
+          <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" target="_blank" class="book-btn">
             Get Detail
           </a>
         </div>
@@ -675,6 +1441,7 @@
             <a href="#home">Home</a> | 
             <a href="#about">About</a> | 
             <a href="#explore">Explore</a> | 
+             <a href="#deals">Exclusive deals</a> | 
             <a href="#contact-us">Contact</a>
           </div>
         </div>
@@ -683,7 +1450,7 @@
         <div class="footer-col middle">
           <h2>🌊 Dive Deeper into Aqua Adventures</h2>
           <p>Explore the exciting adventures awaiting you in Goa! Let us guide you through unforgettable experiences.</p>
-          <a href="#contact-us" class="footer-btn">Get in Touch</a>
+          <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" class="footer-btn">Get in Touch</a>
         </div>
 
         <!-- Right Column -->
@@ -691,14 +1458,14 @@
           <h3>Stay in Touch</h3>
           <p>We’d love to hear from you! Reach out for more information about what we offer.</p>
           <div class="footer-icons">
-            <a href="https://twitter.com/aquasportsgoa" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/aquaadventuregoa/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/61572874132092" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@goaexplorers?si=KaJ2-dlSNOkFg_m8" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/goa_explorers_official?igsh=MWUyYmFjbGliZnA1eA%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1ZD6eZBA3d/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
           </div>
         </div>
       </div>
 
-      <p class="footer-copy">© 2025 Aqua Adventure Goa. Crafted with 💧 by Nature.</p>
+      <p class="footer-copy">© 2025 Goa Explorer. Crafted with 💧 by Nature. Made by estpl</p>
     </footer>
 
 

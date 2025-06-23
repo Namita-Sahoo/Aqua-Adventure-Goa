@@ -132,3 +132,46 @@ const videos = [
     // Show popup
     document.getElementById("popup").style.display = "flex";
   }
+
+function showCategory(category) {
+  const sections = document.querySelectorAll(".card-section");
+  const buttons = document.querySelectorAll(".category-buttons button");
+
+  // Hide all sections and reset their hidden cards and toggle buttons
+  sections.forEach(section => {
+    section.style.display = "none";
+
+    const hiddenCards = section.querySelectorAll(".hidden-card");
+    hiddenCards.forEach(card => card.style.display = "none");
+
+    const btn = section.querySelector(".toggle-btn");
+    if (btn) btn.classList.remove("open"); // reset arrow position
+  });
+
+  // Remove active state from buttons
+  buttons.forEach(btn => btn.classList.remove("active"));
+
+  // Show the selected category section
+  const activeSection = document.getElementById(category);
+  activeSection.style.display = "flex";
+
+  // Add active class to clicked button
+  event.target.classList.add("active");
+
+  // Attach toggle button event for this section
+  const toggleBtn = activeSection.querySelector(".toggle-btn");
+  if (toggleBtn) {
+    toggleBtn.onclick = () => {
+      const isOpen = toggleBtn.classList.contains("open");
+      const hiddenCards = activeSection.querySelectorAll(".hidden-card");
+
+      hiddenCards.forEach(card => {
+        card.style.display = isOpen ? "none" : "block";
+      });
+
+      // Toggle arrow rotation
+      toggleBtn.classList.toggle("open");
+    };
+  }
+}
+
