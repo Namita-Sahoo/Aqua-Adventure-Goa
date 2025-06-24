@@ -27,7 +27,7 @@ const videos = [
     {
       src: "./assets/video/video3.mp4",
       heading: "Soar Above the Sea: A Parasailing Adventure",
-      description: "Glide above the sea with wind in your hair and ocean below — parasailing offers unmatched thrills, breathtaking views.",
+      description: "Glide above the sea with wind in your hair and ocean below — unmatched thrills, breathtaking views.",
       buttonText: "Start Journey"
     }
   ];
