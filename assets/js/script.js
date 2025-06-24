@@ -66,11 +66,11 @@ const videos = [
 
 
 //exclusive discount card carousel function 
+window.addEventListener('load', () => {
   const track = document.getElementById('carouselTrack');
   let slides = document.querySelectorAll('.exclusive-slide');
   let index = 1;
 
-  // Clone first and last for infinite loop effect
   const firstClone = slides[0].cloneNode(true);
   const lastClone = slides[slides.length - 1].cloneNode(true);
 
@@ -81,7 +81,8 @@ const videos = [
   track.insertBefore(lastClone, slides[0]);
 
   slides = document.querySelectorAll('.exclusive-slide');
-  const slideWidth = slides[0].offsetWidth + 20;
+
+  let slideWidth = slides[0].offsetWidth + 10;
   track.style.transform = `translateX(-${slideWidth * index}px)`;
 
   function moveCarousel(direction) {
@@ -107,12 +108,13 @@ const videos = [
   });
 
   window.addEventListener('resize', () => {
-    // Recalculate width on resize
+    slideWidth = slides[0].offsetWidth + 20;
     track.style.transition = 'none';
-    const newSlideWidth = slides[0].offsetWidth + 20;
-    track.style.transform = `translateX(-${newSlideWidth * index}px)`;
+    track.style.transform = `translateX(-${slideWidth * index}px)`;
   });
 
+  window.moveCarousel = moveCarousel;  // expose globally
+});
 
   //--------------------- function to popup card data
   function openPopupFromCard(card) {
