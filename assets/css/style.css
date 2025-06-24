@@ -809,7 +809,7 @@ hr {
 }
 
 .toggle-btn {
-  margin: 20px auto;
+  /* margin: 20px auto; */
   text-align: center;
   cursor: pointer;
 }
