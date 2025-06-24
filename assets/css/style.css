@@ -168,51 +168,6 @@ a {
   color: #00a6ff;
   transform: scale(1.2);
 }
-@media (max-width: 768px) {
-  .sidebar {
-    width: 100%;
-    right: -100%;
-    padding-top: 50px;
-  }
-
-  .sidebar.open {
-    right: 0;
-  }
-
-  .sidebar ul li {
-    padding: 12px;
-    text-align: center;
-  }
-
-  .sidebar ul li a {
-    font-size: 1.1rem;
-  }
-
-  .close-btn {
-    font-size: 28px;
-    top: 12px;
-    left: 20px;
-  }
-
-  .sidebar .stay-in-touch,
-  .sidebar .adventure-goa {
-    padding: 15px;
-  }
-
-  .sidebar .stay-in-touch h2,
-  .sidebar .adventure-goa h2 {
-    font-size: 1rem;
-  }
-
-  .sidebar .stay-in-touch p,
-  .sidebar .adventure-goa p {
-    font-size: 0.95rem;
-  }
-
-  .sidebar .social-icons a {
-    font-size: 2rem;
-  }
-}
 
 /* ----------------------------------------------Home Section css start --------------------------------------- */
 #home {
