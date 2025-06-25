@@ -179,7 +179,6 @@ a {
   align-items: center;
   text-align: center;
   overflow: hidden;
-  padding:0;
 }
 .video-background {
   position: relative;   /* necessary to create a stacking context */
@@ -420,6 +419,9 @@ html {
     height: 100vh;
   }
 
+  .content{
+    top:50%;
+  }
   .content h1 {
     font-size: 2rem; 
   }
