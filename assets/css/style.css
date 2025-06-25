@@ -391,6 +391,9 @@ html {
 
 /* media query ----------------------------------------------------*/
 @media (max-width: 768px) {
+  #home{
+    padding:0;
+  }
   .nav-items {
     display: none;
   }
