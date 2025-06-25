@@ -179,6 +179,7 @@ a {
   align-items: center;
   text-align: center;
   overflow: hidden;
+  padding:0;
 }
 .video-background {
   position: relative;   /* necessary to create a stacking context */
