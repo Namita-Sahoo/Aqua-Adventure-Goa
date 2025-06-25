@@ -180,16 +180,25 @@ a {
   text-align: center;
   overflow: hidden;
 }
-
-.video-background video {
+.video-background {
+  position: relative;   /* necessary to create a stacking context */
   width: 100%;
   height: 100vh;
-  object-fit: cover;
+  overflow: hidden;
+}
+
+/* Video should be at the bottom */
+.video-background video {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
 }
+
+/* Poster image above video */
 #video-placeholder {
   position: absolute;
   top: 0;
@@ -197,9 +206,12 @@ a {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  z-index: -1;
+  z-index: 1;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
 }
 
+/* Content on top of both */
 .content {
   position: absolute;
   top: 70%;
@@ -207,6 +219,7 @@ a {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
+  z-index: 2;
 }
 
 .content h1 {
