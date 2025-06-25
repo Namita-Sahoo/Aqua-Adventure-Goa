@@ -1,0 +1,133 @@
+  .navbar {
+  background:#003b5b; 
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 70px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+/* ------------------------------Explore section css-------------------------  */
+
+
+/* ── Heading style ──────────────*/
+.section-heading{
+  font-size:28px;
+  font-weight:700;
+  color:#003b5b;     
+  text-align:center;
+  line-height:1.2;
+ margin-top:100px;  
+}
+
+@media(max-width:600px){
+  .section-heading{
+    font-size:22px;  
+    margin-bottom:28px;
+  }
+}
+
+/* ——— Container stays the same ——— */
+.card-container{
+  display:flex; 
+  flex-wrap:wrap; 
+  justify-content:center;
+  gap:30px;
+  padding:60px;
+}
+
+/* ——— Card ——— */
+.card{
+  background:#fff;
+  border-radius:15px;
+  box-shadow:0 6px 20px rgba(0,0,0,.1);
+  width:350px;                      
+  overflow:hidden;
+  transition:.3s transform;
+  display:flex; flex-direction:column;
+}
+.card:hover{ transform:translateY(-8px); }
+
+/* shorter hero image */
+.card-img img{
+  width:100%;
+  height:220px;                   
+  object-fit:cover;
+  display:block;
+}
+
+.card-body{
+  padding:15px;
+  display:flex; 
+  flex-direction:column;
+  flex:1;                          
+}
+
+.card-body h4{
+  font-size:18px;
+  font-weight:600;
+  color:#000;
+  margin:0 0 6px;
+}
+.card-body .description{ 
+  padding-top: 10px;
+  font-size:1rem; 
+  color:#000; 
+  line-height:1.4; 
+  margin:0 0 8px; 
+}
+
+.card-body .price{ 
+   font-size:1rem !important;
+   margin:8px 0; 
+   font-weight:500; 
+  }
+
+.price .discounted{ 
+  color:#e63946; 
+  font-weight:700; 
+  margin:0 6px; 
+}
+.price .original{ 
+  text-decoration:line-through;
+   color:#555;
+    font-size:1rem; }
+
+.card-info{
+  font-size:1rem; 
+  color:#000;
+   display:flex;
+  justify-content:space-between;
+  margin-bottom:12px;
+}
+.card-info i{ color:#0d6efd; margin-right:4px; }
+
+/* ——— Explore button ——— */
+.explore-btn{
+  margin-top:auto;                 
+  align-self:flex-end;
+  background:#25D366;
+  color:#fff;
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:14px; font-weight:600;
+  display:inline-flex; align-items:center; gap:6px;
+  text-decoration:none;
+  transition:.2s background, .2s transform;
+}
+.explore-btn i{ 
+  font-size:0.87rem; 
+}
+.explore-btn:hover{
+  background:#25D366;
+  transform:translateX(3px);
+}
+
+/* ——— Mobile width override ——— */
+@media(max-width:768px){
+  .card{ width:90%; }
+}

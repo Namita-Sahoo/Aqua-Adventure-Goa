@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goa Explorer</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style1.css">
+</head>
+<body>
+  <!-- Top Navbar with Logo -->
+  <!-- Top Navbar with Logo -->
+  <div class="navbar">
+  <img src="./assets/Logo2.png" alt="Goa Logo" class="logo">
+
+  <!-- hamburger / close trigger -->
+  <span class="toggle-btn" onclick="toggleNav()">&#9776;</span>
+
+  <ul class="nav-items">
+    <li><a href="dinner-cruise.html">Dinner Cruises</a></li>
+    <li><a href="private-boats.html">Private Boats</a></li>
+    <li><a href="private-yachts.html">Private Yachts</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="sunset.html">Sunset Cruises</a></li>
+    <li><a href="tours.html">Tour Plans</a></li>
+    <li><a href="event.html">Event Planning</a></li>
+  </ul>
+</div>
+
+ 
+  <!-- Sidebar (Hidden by Default) -->
+  <div id="sidebar" class="sidebar">
+  <span class="close-btn" onclick="toggleNav()">&times;</span>
+
+  <ul>
+    <li><a href="dinner-cruise.html">Dinner Cruises</a></li>
+    <li><a href="private-boats.html">Private Boats</a></li>
+    <li><a href="private-yachts.html">Private Yachts</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="sunset.html">Sunset Cruises</a></li>
+    <li><a href="tours.html">Tour Plans</a></li>
+    <li><a href="event.html">Event Planning</a></li>
+  </ul>
+
+  <!-- keep your promo + socials if you still need them -->
+  <div class="stay-in-touch">
+    <h2>Stay in Touch</h2>
+    <p>We’d love to hear from you! Reach out for more information about what we offer.</p>
+  </div>
+</div>
+
+<h2 class="section-heading">Explore Our Private Yatch Experience in Goa</h2>
+ <div class="card-container">
+
+    <div class="card">
+      <div class="card-img">
+        <img src="./assets/images/private-yatch/ahilo_catamaran.webp" alt="Ahilo Catamaran yatch" />
+        
+      </div>
+
+      <div class="card-body">
+        <h4>Ahilo Catamaran yatch</h4>
+        <p class="description">
+        A spacious twin-hull vessel ideal for group parties, fishing trips, and sunset cruises.
+        </p>
+
+        <p class="price">
+          Price <span class="discounted">INR 44999</span>
+        </p>
+
+        <div class="card-info">
+          <span><i class="fa-regular fa-clock"></i>Min 2 hr Rental</span>
+          <span><i class="fa-solid fa-users"></i>Max :50 guests</span>
+        </div>
+
+        <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" class="explore-btn">Book Now →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="./assets/images/private-yatch/Amzonite2.jpeg" alt="Amzonite2" />
+        
+      </div>
+
+      <div class="card-body">
+        <h4>Amazonite yatch</h4>
+        <p class="description">
+        A premium mid-sized yacht perfect for private celebrations and corporate charters.
+        </p>
+
+        <p class="price">
+          Price <span class="discounted">INR 26999</span>
+        </p>
+
+        <div class="card-info">
+          <span><i class="fa-regular fa-clock"></i>Min 2 hr Rental</span>
+          <span><i class="fa-solid fa-users"></i>Max :14 guest</span>
+        </div>
+
+        <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" class="explore-btn">Book Now →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="./assets/images/private-yatch/baystar_speed_boat.webp" alt="Family Dinner Cruise" />
+        
+      </div>
+
+      <div class="card-body">
+        <h4>Family Dinner Cruise</h4>
+        <p class="description">
+        A high-speed boat designed for quick sea adventures and sporty rides.
+        </p>
+
+        <p class="price">
+          Price <span class="discounted">INR 14999</span>
+        </p>
+
+        <div class="card-info">
+          <span><i class="fa-regular fa-clock"></i>Min 2 hr Rental</span>
+          <span><i class="fa-solid fa-users"></i>Max :6 guests</span>
+        </div>
+        <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" class="explore-btn">Book Now →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="./assets/images/private-yatch/blue-diamond-luxury.webp" alt="Blue Diamond Luxury Yacht" />
+        
+      </div>
+
+      <div class="card-body">
+        <h4>Blue Diamond Luxury Yacht</h4>
+        <p class="description">
+           A cozy family boat with space for games, dining, and water activities.
+        </p>
+
+        <p class="price">
+          Price <span class="discounted">INR 35000</span>
+        </p>
+
+        <div class="card-info">
+          <span><i class="fa-regular fa-clock"></i>Min 2 hr Rental</span>
+          <span><i class="fa-solid fa-users"></i>Max :15 guests</span>
+        </div>
+          <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" class="explore-btn">Book Now →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="./assets/images/private-yatch/bluefin.jpg" alt="Bluefin Mini Yacht" />
+        
+      </div>
+
+      <div class="card-body">
+        <h4>Bluefin Mini Yacht</h4>
+        <p class="description">
+         A compact, elegant yacht ideal for intimate get-togethers and private sunset tours.
+        </p>
+
+        <p class="price">
+          Price <span class="discounted">INR 499</span>
+        </p>
+
+        <div class="card-info">
+          <span><i class="fa-regular fa-clock"></i>Min 2 hr Rental</span>
+           <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" class="explore-btn">Book Now →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="./assets/images/private-yatch/funliner.webp" alt="funliner cruise" />
+        
+      </div>
+
+      <div class="card-body">
+        <h4>Party Cruiset</h4>
+        <p class="description">
+        A lively yacht equipped for parties, DJ setups, and group gatherings on water.
+        </p>
+
+        <p class="price">
+          Price <span class="discounted">INR 26999</span>
+        </p>
+
+        <div class="card-info">
+          <span><i class="fa-regular fa-clock"></i>Min 2 hr Rental</span>
+          <span><i class="fa-solid fa-users"></i>Max :12 guests</span>
+        </div>
+           <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" class="explore-btn">Book Now →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="./assets/images/private-yatch/prestige-36.JPG" alt="prestige private cruises" />
+        
+      </div>
+
+      <div class="card-body">
+        <h4>Private yatch</h4>
+        <p class="description">
+            Book your private yacht and enjoy luxury, music, and privacy.
+        </p>
+
+        <p class="price">
+          Price <span class="discounted">INR 35999</span>
+        </p>
+
+        <div class="card-info">
+          <span><i class="fa-regular fa-clock"></i>Min 2 hr Rental</span>
+          <span><i class="fa-solid fa-users"></i>Max :8 guests</span>
+        </div>
+           <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" class="explore-btn">Book Now →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="./assets/images/private-yatch/nautica_catamaran.jpg" alt="Sinq nautica Catamaran" />
+        
+      </div>
+
+      <div class="card-body">
+        <h4>Sinq nautica Catamaran</h4>
+        <p class="description">
+        A spacious catamaran perfect for leisure sails, group brunches, and sunset charters.
+        </p>
+
+        <p class="price">
+          Price <span class="discounted">INR 34999</span>
+        </p>
+
+        <div class="card-info">
+          <span><i class="fa-regular fa-clock"></i>Min 2 hr Rental </span>
+          <span><i class="fa-solid fa-users"></i>Max :25 guests</span>
+        </div>
+           <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" class="explore-btn">Book Now →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        <img src="./assets/images/private_boats/ra_11_super.jpg" alt="RA11 Super Yacht" />
+        
+      </div>
+
+      <div class="card-body">
+        <h4>RA11 Super Yacht</h4>
+        <p class="description">
+        A sophisticated yacht with spacious decks and plush interiors for exclusive groups.
+        </p>
+
+        <p class="price">
+          Price <span class="discounted">INR 400000</span>
+        </p>
+
+        <div class="card-info">
+          <span><i class="fa-regular fa-clock"></i>Min 2 hr Rental</span>
+          <span><i class="fa-solid fa-users"></i>Max :350 guests</span>
+        </div>
+           <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" class="explore-btn">Book Now →</a>
+      </div>
+    </div>
+
+  </div>
+
+ 
+<!------------------------------ contact us section -->
+      <section id="contact-us" style="margin-top: 0;">
+        <div class="contact-section">
+          
+          <div class="contact-image">
+            <img src="./assets/images/contact.jpg" alt="Goa Adventure" />
+          </div>
+      
+          <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <textarea rows="4" placeholder="Your Message" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+      
+        </div>
+      </section>
+      
+ 
+<!--  WhatsApp Floating Button  -->
+<a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<!------------------------footer  start -->
+    <footer class="glass-footer">
+      <div class="footer-wrapper">
+        
+        <!-- Left Column -->
+        <div class="footer-col left">
+          <img src="assets/Logo2.png" alt="Goa Logo" class="footer-logo">
+          <div class="footer-links">
+            <a href="#home">Home</a> | 
+            <a href="#about">About</a> | 
+            <a href="#explore">Explore</a> | 
+             <a href="#deals">Exclusive deals</a> | 
+            <a href="#contact-us">Contact</a>
+          </div>
+        </div>
+
+        <!-- Middle Column -->
+        <div class="footer-col middle">
+          <h2>Dive Deeper into Goa Explorers</h2>
+          <p>Explore the exciting adventures awaiting you in Goa! Let us guide you through unforgettable experiences.</p>
+          <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" class="footer-btn">Get in Touch</a>
+        </div>
+
+        <!-- Right Column -->
+        <div class="footer-col right">
+          <h3>Stay in Touch</h3>
+          <p>We’d love to hear from you! Reach out for more information about what we offer.</p>
+          <div class="footer-icons">
+            <a href="https://youtube.com/@goaexplorers?si=KaJ2-dlSNOkFg_m8" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/goa_explorers_official?igsh=MWUyYmFjbGliZnA1eA%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1ZD6eZBA3d/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-copy">© 2025 Goa Explorers. Crafted with 💧 by Nature. Made by estpl</p>
+
+    </footer>
+
+
+<!------------------------------ footer end -->
+  <script src="./assets/js/script.js"></script>
+  
+</body>
+</html>

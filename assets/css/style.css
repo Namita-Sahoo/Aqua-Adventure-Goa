@@ -80,7 +80,7 @@ a {
   width: 100%;
 }
 .navbar.scrolled {
-  background-color: #0d3851;
+  background-color: #003b5b;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
   color:#fff;
   backdrop-filter: none;
@@ -376,28 +376,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/*------------------------- banner css------------------------------ */
-
-.banner {
-  margin-top: 170px;
-  background: radial-gradient(circle at center, #1c5b7a, #164560 70%);
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.banner h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.banner p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
-
-
 /* media query ----------------------------------------------------*/
 @media (max-width: 768px) {
   .nav-items {
@@ -582,582 +560,9 @@ html {
   }
 }
 
-
-/* Category Button Container */
-.category-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin: 30px 0;
-}
-
-/* Individual Buttons */
-.category-buttons button {
-  padding: 12px 24px;
-  background-color: #0F1E3C;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.category-buttons button:hover {
-  background-color: #1c3a63;
-  transform: translateY(-2px);
-}
-
-/* Active Button (Optional if you want to highlight selected one) */
-.category-buttons button.active {
-  background-color: #ff5722;
-}
-/* ------------------------------Explore section css-------------------------  */
-
-.explore-section{
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-/* Wrapper for all card categories */
-.cards-wrapper {
-  width: 100%;
-  max-width: 1200px;
-  padding: 2rem;
-}
-
-/* Each card section: initially hidden except active one */
-.card-section {
-  display: none;
-  flex-direction: column;
-  /* gap: 2rem;
-  margin-top: 1rem; */
-}
-
-/* Section heading inside each card section */
-.card-section .section-heading {
-  font-size: 1.8rem;
-  text-align: center;
-  color: #222;
-}
-
-/* Show active category's cards */
-.card-section.active {
-  display: flex;
-}
-
-/* Smooth transition when cards appear */
-.card-section {
-  animation: fadeIn 0.5s ease;
-}
-
-/* Optional fade in animation */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px);}
-  to { opacity: 1; transform: translateY(0);}
-}
-
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-  max-width: 1200px;
-  width: 100%;
-}
-
-.card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 1rem;
-  color: #000;
-  position: relative;
-  backdrop-filter: blur(10px);
-  overflow: hidden;
-  transition: transform 0.3s;
-}
-.card h2{
-  font-size: 1.2rem;
-}
-.card:hover {
-  transform: translateY(-10px);
-}
-
-.card-image {
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-  width: 100%;
-  height: 200px;
-}
-
-.card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s ease;
-  border-radius: 15px;
-}
-
-.card:hover .card-image img,
-.card.active .card-image img {
-  transform: scale(1.08);
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s ease;
-  border-radius: 15px;
-}
-
-.card:hover .overlay,
-.card.active .overlay {
-  opacity: 1;
-}
-
-.explore-btn {
-  position: relative; 
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
-  color: #fff;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 25px;
-  font-weight: bold;
-  font-size: 0.95rem;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.card:hover .explore-btn,
-.card.active .explore-btn {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.explore-btn::after {
-  content: ' →';
-  position: absolute;
-  opacity: 0;
-  transform: translateX(-5px);
-  transition: all 0.3s ease;
-}
-
-.card:hover .explore-btn::after,
-.card.active .explore-btn::after {
-  opacity: 1;
-  transform: translateX(5px);
-}
-
-.card-tags {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: rgba(0, 0, 0, 0.5); 
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  display: flex;
-  gap: 10px;
-  font-size: 0.9rem;
-}
-
-
-.rating {
-  font-size: 0.85rem;
-  margin: 0.5rem 0;
-}
-.price-rating {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  font-weight: bold;
-  margin-top: 0.5rem;
-  color: #000;
-}
-
-.from-text {
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
-
-.discount-price {
-  font-size: 1.2rem;
-  color: red;
-}
-
-.original-price {
-  font-size: 1rem;
-  text-decoration: line-through;
-  color: #000;
-}
-
-hr {
-  border: 0.5px solid rgba(255, 255, 255, 0.3);
-  margin: 0.5rem 0;
-}
-.hidden-card {
-  display: none;
-}
-
-.toggle-btn {
-  /* margin: 20px auto; */
-  text-align: center;
-  cursor: pointer;
-}
-
-.toggle-btn img {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s ease;
-}
-
-.toggle-btn.open img {
-  transform: rotate(180deg);
-}
-
-/* -------------------- Responsive for Explore Section -------------------- */
-
-/* Small screens: phones */
-@media (max-width: 768px) {
-  .category-buttons {
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 20px 10px;
-  }
-
-  .category-buttons button {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
-
-  .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .card-image {
-    height: 190px;
-  }
-
-  .explore-btn {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.85rem;
-  }
-
-  .card-tags {
-    font-size: 0.75rem;
-    padding: 6px;
-    gap: 5px;
-  }
-
-  .price-rating {
-    flex-wrap: wrap;
-    font-size: 0.9rem;
-  }
-}
-
-/* Medium screens: tablets */
-@media (min-width: 769px) and (max-width: 1100px) {
-  .category-buttons {
-    gap: 12px;
-    margin: 25px 15px;
-  }
-
-  .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.25rem;
-    padding: 1.5rem;
-  }
-
-  .card-image {
-    height: 200px;
-  }
-
-  .explore-btn {
-    padding: 0.7rem 1.4rem;
-    font-size: 0.9rem;
-  }
-
-  .card-tags {
-    font-size: 0.8rem;
-    padding: 8px;
-    gap: 7px;
-  }
-}
-
-.exclusive-carousel-section {
-  padding: 20px 20px;
-  background: #f5fbff;
-  text-align: center;
-}
-
-.section-heading {
-  font-size: 2rem;
-  color: #004e89;
-  margin-bottom: 20px;
-  
-}
-
-.section-heading1{
-  font-size: 2.5rem; 
-  font-weight: bold; 
-  text-align: center;
-  color: #ff5733; 
-  letter-spacing: 2px; 
-  text-transform: uppercase; 
-  position: relative; 
-  display: inline-block; 
-  margin: 20px 0;
-  
-}
-.section-heading1::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #ff5733;
-  transform: scaleX(0); 
-  transform-origin: bottom right; 
-  transition: transform 0.4s ease-in-out; 
-}
-
-.section-heading1:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left; 
-}
-.section-description {
-  font-size: 1.2rem;
-  color: #333; 
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
-}
-
-.carousel-container {
-  position: relative;
-  overflow: hidden;
-  max-width: 1000px;
-  margin: auto;
-}
-.carousel-container h3{
-  font-size: 1.4rem;
-}
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease;
-  gap: 10px;
-}
-
-.exclusive-slide {
-   min-width: 300px;
-  background: white;
-  border-radius: 16px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-}
-
-.image-wrapper {
-  position: relative;
-}
-
-.deal-badge {
-  position: absolute;
-  top: 15px;
-  left: -35px; 
-  transform: rotate(-45deg);
-  background: linear-gradient(45deg, gold, orange);
-  color: #fff;
-  font-weight: bold;
-  padding: 10px 50px;
-  font-size: 0.8rem;
-  z-index: 2;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
-}
-
-.exclusive-img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.deal-content {
-  padding: 15px;
-  color: #000;
-}
-
-.deal-price {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 10px 0;
-}
-
-.discounted {
-  color: #e74c3c;
-  font-weight: bold;
-}
-
-.original {
-  color: #888;
-  text-decoration: line-through;
-}
-
-.book-now-btn {
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
-  color: white;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  font-size: 1.5rem;
-  padding: 8px 12px;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.carousel-btn.prev { left: 0; }
-.carousel-btn.next { right: 0; }
-
-@media (max-width: 768px) {
-  .exclusive-slide {
-    min-width: 85%;
-  }
-}
-
-
-
-
-
-
-
-
-/* -----------------------------deal popup card---------------------- */
-.deal-popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  padding: 20px;
-  color: #000;
-}
-
-.deal-popup-content {
-  background: #fff;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 400px;
-  padding: 20px;
-  position: relative;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.deal-popup-content img {
-  width: 100%;
-  height: 220px; 
-  object-fit: cover; 
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.deal-popup-content h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.deal-popup-content p {
-  font-size: 0.95rem;
-  color: #555;
-  text-align: center;
-  margin-bottom: 15px;
-}
-.popup-price {
-  margin-top: 10px;
-  font-size: 1rem;
-}
-
-.popup-price .discount {
-  color: red;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-.popup-price .original {
-  text-decoration: line-through;
-  color: gray;
-  font-size: 0.9rem;
-}
-.book-btn {
-  display: inline-block;
-  background-color: #25D366;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.book-btn:hover {
-  background-color: #1ebe5d;
-}
-
-.close-btn {
-  position: absolute;
-  top: 0px;
-  left: 5px;
-  font-size: 2rem;
-  color: #000 !important;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 /* contact us css start------------------------------- */
 #contact-us {
+  margin-top: 170px;
   background-color: #f1f9ff;
   padding: 60px 20px;
 }
@@ -1348,27 +753,6 @@ hr {
   border-top: 1px solid rgba(255,255,255,0.1);
   padding-top: 15px;
 }
-.scroll-to-top {
-  position: fixed;
-  bottom: 30px; 
-  right: 30px;
-  background-color: rgb(249, 99, 45); 
-  padding: 10px;
-  width:50px;
-  height:50px;
-  border-radius: 50%;
-  font-size: 1.3rem;
-  color: white;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.scroll-to-top:hover {
-  background-color: #e4405f; 
-  transform: scale(1.1); 
-}
 
 /* Smooth scrolling effect */
 html {
@@ -1397,4 +781,106 @@ html {
     transform: scale(1);
   }
 }
+/* WhatsApp floating button */
+.whatsapp-float{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;          /* distance from bottom */
+  right: 25px;           /* distance from right  */
+  background:#25D366;    /* WhatsApp green       */
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:32px;
+  z-index:9999;
+  box-shadow:0 8px 15px rgba(0,0,0,.2);
+  transition:transform .2s ease-in-out;
+}
+.whatsapp-float:hover{
+  transform:scale(1.1);
+}
+
+/* Expanding ring pulse */
+@keyframes wpPulse {
+  0%   { transform: scale(1);   opacity: .6; }
+  70%  { transform: scale(1.8); opacity: 0;  }
+  100% { transform: scale(2);   opacity: 0;  }
+}
+
+.whatsapp-float::after {
+  content: '';
+  position: absolute;
+  inset: 0;                 
+  border-radius: 50%;
+  border: 3px solid #25D366;
+  animation: wpPulse 1.6s ease-out infinite;
+  pointer-events: none;      
+}
+
+
+/* -----------------------------explore section css------------------------------ */
+.carousel-section {
+  padding: 40px;
+  background-color: #f5fbff;
+  text-align: center;
+}
+
+.carousel-section h2 {
+  margin-bottom: 30px;
+  font-size: 2.3rem;
+  color: #004f63;
+}
+
+.swiper {
+  width: 90%;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 20px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  padding: 0;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin: 10px 0 5px;
+  color: #000;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #0F1E3C;
+  padding: 0 10px 15px;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+
 
