@@ -43,43 +43,33 @@ const videos = [
     sidebar.classList.toggle("open");
   }
 
- function changeVideo(index) {
-  const video        = document.getElementById("background-video");
-  const placeholder  = document.getElementById("video-placeholder"); // target the <img>
-  const content      = document.querySelector(".content");
-  const heading      = content.querySelector("h1");
-  const description  = content.querySelector("p");
-  const button       = content.querySelector("button");
+  function changeVideo(index) {
+  const video      = document.getElementById("background-video");
+  const content    = document.querySelector(".content");
+  const heading    = content.querySelector("h1");
+  const description= content.querySelector("p");
+  const button     = content.querySelector("button");
 
-  const selected     = videos[index];
+  const selected   = videos[index];
 
-  // 1. Show the new poster image
-  placeholder.src = selected.poster;
-  placeholder.style.opacity = 1;
-
-  // 2. Animate clip-path on video
+  /* ------------- 1. animate clip-path ------------- */
   video.classList.remove("clip-animate");
-  void video.offsetWidth;
+  void video.offsetWidth;          // restart the animation
   video.classList.add("clip-animate");
 
-  // 3. Swap video source
-  video.src = selected.src;
-  video.load();
-  video.play().catch(() => {});
+  /* ------------- 2. swap poster + src ------------- */
+  video.poster = selected.poster; 
+  video.src    = selected.src;
+  video.load();                    
+  video.play().catch(() => {});   
 
-  // 4. Hide placeholder once video starts playing
-  video.onplaying = () => {
-    placeholder.style.opacity = 0;
-  };
-
-  // 5. Update text content
+  /* ------------- 3. update text content ----------- */
   heading.textContent     = selected.heading;
   description.textContent = selected.description;
   button.textContent      = selected.buttonText;
 
   currentIndex = index;
 }
-
 
 
 
