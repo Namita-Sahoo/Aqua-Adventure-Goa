@@ -182,7 +182,7 @@ a {
   padding: 0;
 }
 .video-background {
-  position: relative;   /* necessary to create a stacking context */
+  position: relative;   
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -426,7 +426,9 @@ html {
   height: 100px;
   object-fit: cover;
 }
-
+.activity-card img:hover{
+  transform: scale(1.1);
+}
 .activity-card p {
   margin-top: 10px;
   font-weight: 600;
@@ -952,3 +954,148 @@ html {
 }
 
 
+/* ==================  SECTION WRAPPER  ================== */
+.offers {
+  padding: 40px 60px 50px;
+  background: #f9f9f9;
+  overflow-x: hidden;            
+}
+
+.offers__title {
+  margin-bottom: 30px;
+  font-size: 2.3rem;
+  color: #004f63;
+  text-align: center;
+}
+
+
+.offers__track {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  justify-content: center;       /* center cards on small view */
+  scrollbar-width: none;
+}
+.offers__track::-webkit-scrollbar { display: none; }
+
+/* Tablet and above */
+@media (min-width: 600px) {
+  .offers__track {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    justify-content: center;     
+    gap: 20px 16px;             
+    overflow: visible;
+    max-width: 1100px;
+    padding-left: 70px;
+    margin: 0 auto;             
+  }
+}
+
+/* --------------  Desktop   -------------- */
+@media (min-width: 1024px) {
+  .offers__track {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ==================  CARD  ================== */
+.offer {
+  flex: 0 0 65vw;
+  max-width: 350px;
+  scroll-snap-align: start;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+@media (min-width: 600px) {
+  .offer { flex: initial; }
+}
+.offer:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.25);
+}
+
+/* ----------------  IMAGE ON TOP  ---------------- */
+.offer__img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+.offer:hover .offer__img {
+  transform: scale(1.05);
+}
+
+/* ----------------  TEXT AT BOTTOM  ---------------- */
+.offer__copy {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #222;
+}
+
+.offer__copy h3 {
+  margin: 0;
+  font: 600 1.2rem "Poppins", sans-serif;
+}
+
+.btn1 {
+  align-self: center;
+  padding: 8px 20px;
+  font: 600 0.95rem "Poppins", sans-serif;
+  color: #fff;
+  background: #25D366;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.btn1:hover {
+  background:#25D366 ;
+}
+.btn1:active {
+  transform: scale(0.97);
+}
+.btn1:focus-visible {
+  outline: 2px solid #ffe600;
+  outline-offset: 2px;
+}
+@media (max-width: 585px) {
+  .offers__track {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px;
+  }
+
+  .offer {
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .offer__img {
+    height: 160px;
+  }
+
+  .offer__copy h3 {
+    font-size: 1.05rem;
+  }
+
+  .btn1 {
+    font-size: 0.85rem;
+    padding: 7px 18px;
+  }
+}
