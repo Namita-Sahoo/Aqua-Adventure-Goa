@@ -87,7 +87,7 @@
       <div class="swiper-slide">
         <a href="private-boats.html" target="_blank" rel="noopener noreferrer"  class="card-link">
           <div class="card">
-            <img src="./assets/images/private_boats/lexicon_cruise.JPG" alt="Private Boats">
+            <img src="./assets/images/private_boats/ra_11_super.jpg" alt="Private Boats">
             <h3>Private Boats</h3>
             <p>Enjoy a luxury boats Experience with meals and music</p>
           </div>
@@ -97,7 +97,7 @@
       <div class="swiper-slide">
         <a href="private-yachts.html"target="_blank" rel="noopener noreferrer"  class="card-link">
           <div class="card">
-            <img src="./assets/images/private-cruise.jpg" alt="Private yachts">
+            <img src="./assets/images/private-yatch/ahilo_catamaran.webp" alt="Private yachts">
             <h3>Private Yachts</h3>
             <p>Explore Our Private Yatch Experience with us.</p>
           </div>
@@ -128,7 +128,7 @@
         <a href="tours.html" target="_blank" rel="noopener noreferrer" class="card-link">
           <div class="card">
             <img src="./assets/images/tours/tours.jpg" alt="Tours Cruise">
-            <h3>Tours Cruise</h3>
+            <h3>Our Tours</h3>
             <p>Discover Goa with Our Guided Tour Packages</p>
           </div>
         </a>
@@ -147,8 +147,8 @@
     </div>
 
     <!-- Navigation Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
   </div>
 </section>
 
@@ -172,20 +172,6 @@
                   Book Now →
              </a>       
       </div>
-    </article>
-
-    <article class="offer">
-      <img src="./assets/images/offers/waterfall.png"
-           alt="Dinner cruise at sunset"
-           class="offer__img" loading="lazy">
-      <div class="offer__copy">
-        <h3>Waterfall</h3>
-              <a class="btn1" 
-                  href="https://wa.me/918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" 
-                  target="_blank" rel="noopener noreferrer">
-                  Book Now →
-             </a>       
-        </div>
     </article>
 
     <article class="offer">
@@ -394,19 +380,25 @@
 <!------------------------------ footer end -->
   <script src="./assets/js/script.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-  var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  breakpoints: {
-    480:  { slidesPerView: 2 }, // phones
-    768:  { slidesPerView: 3 }, // tablets
-    1200: { slidesPerView: 5 }  // desktops ≥ 1200 px
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+ <script>
+document.addEventListener('DOMContentLoaded', () => {
+      var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      breakpoints: {
+        320:  { slidesPerView: 1.5, spaceBetween: 5 }, 
+        480:  { slidesPerView: 2, spaceBetween: 15 },
+        768:  { slidesPerView: 3 },
+        1200: { slidesPerView: 5 }
+      },
+      mousewheel: {
+        enabled: true,
+        forceToAxis: true,
+        releaseOnEdges: true,
+      }
+    });
 });
+</script>
+
 
 </script>
   

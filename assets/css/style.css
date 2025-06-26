@@ -952,6 +952,29 @@ html {
   color: inherit;
   display: block;
 }
+@media (max-width: 480px) {
+  .swiper-slide {
+    justify-content: center;
+  }
+
+  .card {
+    width: 160px; 
+    height: auto;
+  }
+
+  .card img {
+    height: 100px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.75rem;
+    padding: 0 8px 10px;
+  }
+}
 
 
 /* ==================  SECTION WRAPPER  ================== */
