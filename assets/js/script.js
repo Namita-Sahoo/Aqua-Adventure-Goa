@@ -20,18 +20,18 @@ const videos = [
     buttonText: "Read More"
   },
   {
-    src: "./assets/video/video2.mp4",
-    poster: "./assets/video/placeholder2.png",
-    heading: "Dive into an Underwater Wonderland",
-    description: "Join scuba divers as they explore a vibrant marine ecosystem, teeming with colorful fish and intricate coral formations.",
-    buttonText: "Discover More"
-  },
-  {
     src: "./assets/video/video3.mp4",
     poster: "./assets/video/placeholder3.png",
     heading: "Soar Above the Sea",
     description: "Glide above the sea with wind in your hair and ocean below — unmatched thrills, breathtaking views.",
     buttonText: "Start Journey"
+  },
+  {
+    src: "./assets/video/video2.mp4",
+    poster: "./assets/video/placeholder2.png",
+    heading: "Dive into an Underwater Wonderland",
+    description: "Join scuba divers as they explore a vibrant marine ecosystem, teeming with colorful fish and intricate coral formations.",
+    buttonText: "Discover More"
   }
 ];
 
