@@ -58,10 +58,15 @@ const videos = [
   video.classList.add("clip-animate");
 
   /* ------------- 2. swap poster + src ------------- */
-  video.poster = selected.poster; 
-  video.src    = selected.src;
-  video.load();                    
-  video.play().catch(() => {});   
+ video.poster = selected.poster;
+
+const source = video.querySelector('source');
+if (source) {
+  source.src = selected.src;
+  video.load();
+  video.play().catch(() => {});
+}
+  
 
   /* ------------- 3. update text content ----------- */
   heading.textContent     = selected.heading;
@@ -71,5 +76,5 @@ const videos = [
   currentIndex = index;
 }
 
-
+changeVideo(0);
 
