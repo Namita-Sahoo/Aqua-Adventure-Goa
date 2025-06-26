@@ -179,6 +179,7 @@ a {
   align-items: center;
   text-align: center;
   overflow: hidden;
+  padding: 0;
 }
 .video-background {
   position: relative;   /* necessary to create a stacking context */
@@ -389,10 +390,54 @@ html {
   scroll-behavior: smooth;
 }
 
+.things-to-do {
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 170px;
+}
+
+.things-to-do h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.activities-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.activity-card {
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.activity-card:hover {
+  transform: scale(1.05);
+}
+
+.activity-card img {
+  width: 100%;
+  border-radius: 15px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.activity-card p {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+
 /* media query ----------------------------------------------------*/
 @media (max-width: 768px) {
   #home{
-    padding:0;
+    padding: 0;
   }
   .nav-items {
     display: none;
@@ -419,8 +464,8 @@ html {
     height: 100vh;
   }
 
-  .content{
-    top:50%;
+  .content {
+    top: 50%;
   }
   .content h1 {
     font-size: 2rem; 
@@ -447,6 +492,7 @@ html {
     flex-direction: column;
     padding: 40px 20px;
     gap: 30px;
+    margin-bottom: 2rem;
   }
 
   .about-images {
@@ -494,6 +540,10 @@ html {
   .about-text p {
     font-size: 1rem;
   }
+  .things-to-do{
+      padding-top: 0;        
+      margin-top: 2.5rem;    
+    }
 }
 
 
@@ -581,7 +631,7 @@ html {
 
 /* contact us css start------------------------------- */
 #contact-us {
-  margin-top: 170px;
+  /* margin-top: 170px; */
   background-color: #f1f9ff;
   padding: 60px 20px;
 }
@@ -900,6 +950,5 @@ html {
   color: inherit;
   display: block;
 }
-
 
 
