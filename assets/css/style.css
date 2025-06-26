@@ -954,6 +954,7 @@ html {
   display: block;
 }
 @media (max-width: 480px) {
+  
   .swiper-slide {
     justify-content: center;
   }
@@ -1137,4 +1138,28 @@ html {
 @media (max-width: 480px) {
   .offer { flex: 0 0 160px; }    
   .offer__img { height: 100px; } 
+
+
 }
+@media (max-width: 480px) {
+  .offers {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .carousel-section {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .offers__title, .carousel-section h2 {
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+
+  section {
+    margin: 0;
+  }
+}
+
+
