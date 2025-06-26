@@ -982,7 +982,7 @@ html {
 .offers__track::-webkit-scrollbar { display: none; }
 
 /* Tablet and above */
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .offers__track {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
