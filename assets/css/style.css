@@ -80,7 +80,7 @@ a {
   width: 100%;
 }
 .navbar.scrolled {
-  background-color: #003b5b;
+  background-color: #000;;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
   color:#fff;
   backdrop-filter: none;
@@ -740,7 +740,8 @@ html {
 /* footer css----------------------------------------------- */
 .glass-footer {
   position: relative;
-  background: linear-gradient(to bottom right, #003b5b, #001c2b);
+  /* background: linear-gradient(to bottom right, #003b5b, #001c2b); */
+  background: #000;
   color: white;
   padding: 60px 20px 30px;
   text-align: center;
@@ -1125,15 +1126,15 @@ html {
 /* Put this after your other styles */
 .mySwiper .swiper-slide,
 .offersSwiper .swiper-slide {
-  padding-inline: 2px;           /* = 4 px gap between two slides */
+  padding-inline: 2px;           
 }
 
 .offer {
-  flex: 0 0 220px;               /* desktop base width */
+  flex: 0 0 220px;              
 }
 
 /* Shrink nicely on phones */
 @media (max-width: 480px) {
-  .offer { flex: 0 0 160px; }    /* same for both carousels */
-  .offer__img { height: 100px; } /* keep image ratio tidy */
+  .offer { flex: 0 0 160px; }    
+  .offer__img { height: 100px; } 
 }
