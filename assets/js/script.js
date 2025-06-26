@@ -43,32 +43,33 @@ const videos = [
     sidebar.classList.toggle("open");
   }
 
-  function changeVideo(index) {
-  const video      = document.getElementById("background-video");
-  const content    = document.querySelector(".content");
-  const heading    = content.querySelector("h1");
-  const description= content.querySelector("p");
-  const button     = content.querySelector("button");
+ function changeVideo(index) {
+  const video        = document.getElementById("background-video");
+  const content      = document.querySelector(".content");
+  const heading      = content.querySelector("h1");
+  const description  = content.querySelector("p");
+  const button       = content.querySelector("button");
 
-  const selected   = videos[index];
+  const selected     = videos[index];
 
-  /* ------------- 1. animate clip-path ------------- */
   video.classList.remove("clip-animate");
-  void video.offsetWidth;          // restart the animation
+  void video.offsetWidth;
   video.classList.add("clip-animate");
 
-  /* ------------- 2. swap poster + src ------------- */
- video.poster = selected.poster;
+  video.pause();
+  video.setAttribute("poster", selected.poster); // Use setAttribute for full browser support
 
-const source = video.querySelector('source');
-if (source) {
-  source.src = selected.src;
-  video.load();
-  video.play().catch(() => {});
-}
-  
+  const source = video.querySelector("source");
+  if (source) {
+    source.setAttribute("src", selected.src);    
+    video.load();                               
 
-  /* ------------- 3. update text content ----------- */
+    video.oncanplay = () => {
+      video.play().catch(() => {});            
+    };
+  }
+
+  /* 3. Update text content */
   heading.textContent     = selected.heading;
   description.textContent = selected.description;
   button.textContent      = selected.buttonText;
