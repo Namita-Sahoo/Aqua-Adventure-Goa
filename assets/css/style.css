@@ -1128,15 +1128,12 @@ html {
   padding-inline: 2px;           /* = 4 px gap between two slides */
 }
 
-.card,
 .offer {
   flex: 0 0 220px;               /* desktop base width */
 }
 
 /* Shrink nicely on phones */
 @media (max-width: 480px) {
-  .card,
   .offer { flex: 0 0 160px; }    /* same for both carousels */
-  .card img,
   .offer__img { height: 100px; } /* keep image ratio tidy */
 }
