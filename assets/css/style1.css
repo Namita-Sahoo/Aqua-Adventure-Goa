@@ -129,5 +129,5 @@
 
 /* ——— Mobile width override ——— */
 @media(max-width:768px){
-  .card{ width:90%; }
+  .card{ width:99%; }
 }
