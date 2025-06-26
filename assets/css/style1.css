@@ -48,9 +48,18 @@
   width:350px;                      
   overflow:hidden;
   transition:.3s transform;
-  display:flex; flex-direction:column;
+  display:flex; 
+  flex-direction:column;
+
+     opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s ease;
 }
 .card:hover{ transform:translateY(-8px); }
+
+.card.show {
+  animation: fadeInUp 0.8s ease forwards;
+}
 
 /* shorter hero image */
 .card-img img{
@@ -130,4 +139,14 @@
 /* ——— Mobile width override ——— */
 @media(max-width:768px){
   .card{ width:99%; }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
