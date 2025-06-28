@@ -58,9 +58,9 @@
     </video>
 
     <div class="content">
-      <h1>Ride the Thrill of Ocean Waves</h1>
+      <h1>Book Your Ultimate Goa Experience Now</h1>
       <p>Experience the adrenaline rush as surfers conquer towering waves, showcasing skill and passion in every move.</p>
-      <button class="btn">Read More</button>
+      <button class="btn">Inquiry Now</button>
       <div class="dots">
         <span class="dot" onclick="changeVideo(0)">&#8226;</span>
         <span class="dot" onclick="changeVideo(1)">&#8226;</span>
@@ -82,7 +82,7 @@
           <div class="card">
             <img src="./assets/images/dinner-cruise.jpg" alt="Dinner Cruise">
             <h3>Dinner Cruise</h3>
-            <p>Explore Our Private Dinner Cruising in Goa</p>
+            <p>Explore Our Dinner Cruising in Goa</p>
           </div>
         </a>
       </div>
@@ -172,6 +172,7 @@
                class="offer__img">
           <div class="offer__copy">
             <h3>Dinner Cruise</h3>
+            <p class="price">Starts from <span>INR 999</span> </p>
             <a class="btn1"
                href="https://wa.me/918806344851?text=Hi%20I%20want%20details%20about%20the%20tour"
                target="_blank" rel="noopener noreferrer">
@@ -188,6 +189,7 @@
               class="offer__img" loading="lazy">
               <div class="offer__copy">
                 <h3>Goa Tour</h3>
+                <p class="price">Starts from <span>INR 499 </span> </p>
                 <a class="btn1" 
                       href="https://wa.me/918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" 
                       target="_blank" rel="noopener noreferrer">
@@ -198,12 +200,47 @@
       </div>
 
       <div class="swiper-slide">
+          <article class="offer">
+          <img src="./assets/images/offers/yatch.png"
+              alt="Dinner cruise at sunset"
+              class="offer__img">
+          <div class="offer__copy">
+            <h3>Yatch Experience</h3>
+            <p class="price">Starts from <span>INR </span> </p>
+                <a class="btn1" 
+                      href="https://wa.me/918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" 
+                      target="_blank" rel="noopener noreferrer">
+                      Book&nbsp;Now →
+                </a>       
+          </div>
+        </article>
+      </div>
+
+      <div class="swiper-slide">
+          <article class="offer">
+          <img src="./assets/images/offers/monsoon_water_adventure.png"
+              alt="Dinner cruise at sunset"
+              class="offer__img">
+          <div class="offer__copy">
+            <h3>Monsoon Watersports</h3>
+            <p class="price">Starts from <span>INR 1199</span> </p>
+                <a class="btn1" 
+                      href="https://wa.me/918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" 
+                      target="_blank" rel="noopener noreferrer">
+                      Book&nbsp;Now →
+                </a>       
+          </div>
+        </article>
+      </div>
+
+      <div class="swiper-slide">
         <article class="offer">
           <img src="./assets/images/offers/dughsagar.png"
               alt="Dinner cruise at sunset"
               class="offer__img" loading="lazy">
               <div class="offer__copy">
-                <h3>Dughsagar Waterfall</h3>
+                <h3>Dudhsagar Waterfall</h3>
+                <p class="price">Starts from<span> INR 1999</span> </p>
                   <a class="btn1" 
                       href="https://wa.me/918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" 
                       target="_blank" rel="noopener noreferrer">
@@ -220,6 +257,7 @@
               class="offer__img" loading="lazy">
           <div class="offer__copy">
             <h3>Evening Parties</h3>
+            <p class="price">Starts from <span>INR 999</span> </p>
                 <a class="btn1" 
                       href="https://wa.me/918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" 
                       target="_blank" rel="noopener noreferrer">
@@ -228,23 +266,6 @@
           </div>
         </article>
       </div>
-
-      <div class="swiper-slide">
-          <article class="offer">
-          <img src="./assets/images/offers/dinner.png"
-              alt="Dinner cruise at sunset"
-              class="offer__img">
-          <div class="offer__copy">
-            <h3>Dinner Cruise</h3>
-                <a class="btn1" 
-                      href="https://wa.me/918806344851?text=Hi%20I%20want%20details%20about%20the%20tour" 
-                      target="_blank" rel="noopener noreferrer">
-                      Book&nbsp;Now →
-                </a>       
-          </div>
-        </article>
-      </div>
-
 
     </div>
 
@@ -428,27 +449,28 @@ document.addEventListener('DOMContentLoaded', () => {
   /* OUR EXPERTISE */
   new Swiper('.mySwiper', {
     breakpoints: {
-      320:  { slidesPerView: 1.4, spaceBetween: 8  },
-      480:  { slidesPerView: 2  , spaceBetween: 10 },
-      768:  { slidesPerView: 3  , spaceBetween: 16 },
-      1200: { slidesPerView: 5  , spaceBetween: 24 }
+      320:  { slidesPerView: 1.4, spaceBetween: 6 },
+      480:  { slidesPerView: 2,   spaceBetween: 8 },
+      768:  { slidesPerView: 3,   spaceBetween: 16 },
+      1200: { slidesPerView: 5,   spaceBetween: 24 }
     },
-    mousewheel:{ enabled:true, forceToAxis:true, releaseOnEdges:true }
+    mousewheel: { enabled:true, forceToAxis:true, releaseOnEdges:true }
   });
 
   /* EXCLUSIVE OFFERS */
   new Swiper('.offersSwiper', {
     breakpoints: {
-      320:  { slidesPerView: 1.3, spaceBetween: 10  },
-      480:  { slidesPerView: 2  , spaceBetween: 10 },
-      768:  { slidesPerView: 3  , spaceBetween: 16 },
-      1200: { slidesPerView: 5  , spaceBetween: 16 }
+      320:  { slidesPerView: 1.1, spaceBetween: 8  },
+      480:  { slidesPerView: 1.3, spaceBetween: 10 },
+      768:  { slidesPerView: 3,   spaceBetween: 16 },
+      1200: { slidesPerView: 6,   spaceBetween: 20 }
     },
-    navigation:{ nextEl:'.offers-next', prevEl:'.offers-prev' },
-    mousewheel:{ enabled:true, forceToAxis:true, releaseOnEdges:true }
+    navigation: { nextEl: '.offers-next', prevEl: '.offers-prev' },
+    mousewheel: { enabled:true, forceToAxis:true, releaseOnEdges:true }
   });
 
 });
+
 </script>
   
 </body>

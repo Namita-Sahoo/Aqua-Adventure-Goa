@@ -15,23 +15,23 @@ const videos = [
   {
     src: "./assets/video/video1.mp4",
     poster: "./assets/video/placeholder1.png",
-    heading: "Ride the Thrill of Ocean Waves",
+    heading: "Book Your Ultimate Goa Experience Now",
     description: "Experience the adrenaline rush as surfers conquer towering waves, showcasing skill and passion in every move.",
-    buttonText: "Read More"
+    buttonText: "Inquiry Now"
   },
   {
     src: "./assets/video/video3.mp4",
     poster: "./assets/video/placeholder3.png",
-    heading: "Soar Above the Sea",
+    heading: "Book Your Ultimate Goa Experience Now",
     description: "Glide above the sea with wind in your hair and ocean below — unmatched thrills, breathtaking views.",
-    buttonText: "Start Journey"
+    buttonText: "Inquiry Now"
   },
   {
     src: "./assets/video/video2.mp4",
     poster: "./assets/video/placeholder2.png",
-    heading: "Dive into an Underwater Wonderland",
+    heading: "Book Your Ultimate Goa Experience Now",
     description: "Join scuba divers as they explore a vibrant marine ecosystem, teeming with colorful fish and intricate coral formations.",
-    buttonText: "Discover More"
+    buttonText: "Inquiry Now"
   }
 ];
 
