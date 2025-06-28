@@ -1071,9 +1071,10 @@ html {
 /* ==================  CARD  ================== */
 
 .offer {
-  flex: 0 0 75vw;
-  max-width: 460px !important;
-  min-height: 350px; 
+  flex: 0 0 auto;
+  width: 300px;
+  max-width: 460px;
+  min-height: 350px;
   scroll-snap-align: start;
   background: #fff;
   border-radius: 14px;
@@ -1083,9 +1084,21 @@ html {
   flex-direction: column;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
 @media (min-width: 600px) {
   .offer {
     flex: initial;
+  }
+}
+@media (min-width: 550px) {
+  .offer {
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .offer {
+    width: 320px;
   }
 }
 .offer:hover {

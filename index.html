@@ -459,15 +459,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* EXCLUSIVE OFFERS */
   new Swiper('.offersSwiper', {
-    breakpoints: {
-      320:  { slidesPerView: 1.1, spaceBetween: 8  },
-      480:  { slidesPerView: 1.3, spaceBetween: 10 },
-      768:  { slidesPerView: 3,   spaceBetween: 16 },
-      1200: { slidesPerView: 6,   spaceBetween: 20 }
-    },
-    navigation: { nextEl: '.offers-next', prevEl: '.offers-prev' },
-    mousewheel: { enabled:true, forceToAxis:true, releaseOnEdges:true }
-  });
+  breakpoints: {
+    320:  { slidesPerView: 1.1, spaceBetween: 8 },
+    480:  { slidesPerView: 2.1, spaceBetween: 12 },
+    600:  { slidesPerView: 2.2, spaceBetween: 14 },
+    768:  { slidesPerView: 3.2, spaceBetween: 16 },
+    1200: { slidesPerView: 5.5,   spaceBetween: 18 }
+  },
+  navigation: { nextEl: '.offers-next', prevEl: '.offers-prev' },
+  mousewheel: { enabled:true, forceToAxis:true, releaseOnEdges:true }
+});
 
 });
 
