@@ -240,26 +240,22 @@
 
  
 <!------------------------------ contact us section -->
-      <section id="contact-us" style="margin-top: 0;">
-        <div class="contact-section">
-          
-          <div class="contact-image">
-            <img src="./assets/images/contact.jpg" alt="Goa Adventure" />
-          </div>
-      
-          <div class="contact-form">
-            <h2>Contact Us</h2>
-            <form>
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <textarea rows="4" placeholder="Your Message" required></textarea>
-              <button type="submit">Send Message</button>
-            </form>
-          </div>
-      
-        </div>
-      </section>
-      
+  <section id="contact-us" style="margin-top: 0;">
+  <div class="contact-section">
+    <div class="contact-image">
+      <img src="./assets/images/contact.jpg" alt="Goa Adventure" loading="lazy" />
+    </div>
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="tel" id="phone" placeholder="Your Mobile Number" required />
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
  
 <!--  WhatsApp Floating Button  -->
 <a href="https://wa.me/+918806344851?text=Hi%20I%20want%20details%20about%20the%20tour"
@@ -334,6 +330,8 @@
 <!------------------------------ footer end -->
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/script1.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   
 </body>
 </html>

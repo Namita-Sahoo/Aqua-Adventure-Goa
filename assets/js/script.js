@@ -79,3 +79,25 @@ const videos = [
 
 changeVideo(0);
 
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (name === "" || phone === "" || message === "") {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Incomplete Form',
+        text: 'Please fill out all fields before submitting.'
+      });
+    } else {
+      Swal.fire({
+        icon: 'success',
+        title: 'Message Sent!',
+        text: `Thank you ${name}, we’ll get back to you soon.`
+      });
+      this.reset();
+    }
+  });

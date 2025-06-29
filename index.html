@@ -347,25 +347,22 @@
 </section>
 
 <!------------------------------ contact us section -->
-      <section id="contact-us">
-        <div class="contact-section">
-          
-          <div class="contact-image">
-            <img src="./assets/images/contact.jpg" alt="Goa Adventure" loading="lazy" />
-          </div>
-      
-          <div class="contact-form">
-            <h2>Contact Us</h2>
-            <form>
-              <input type="text" placeholder="Your Name" required />
-              <input type="tel" placeholder="Your Mobile Number" required />
-              <textarea rows="4" placeholder="Your Message" required></textarea>
-              <button type="submit">Send Message</button>
-            </form>
-          </div>
-      
-        </div>
-      </section>
+  <section id="contact-us">
+  <div class="contact-section">
+    <div class="contact-image">
+      <img src="./assets/images/contact.jpg" alt="Goa Adventure" loading="lazy" />
+    </div>
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="tel" id="phone" placeholder="Your Mobile Number" required />
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
       
  
 <!--  WhatsApp Floating Button  -->
@@ -443,6 +440,8 @@
 <!------------------------------ footer end -->
   <script src="./assets/js/script.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
  <script>
 document.addEventListener('DOMContentLoaded', () => {
 
