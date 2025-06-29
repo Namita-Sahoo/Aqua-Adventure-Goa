@@ -92,6 +92,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
         title: 'Incomplete Form',
         text: 'Please fill out all fields before submitting.'
       });
+      console.log(Swal);
     } else {
       Swal.fire({
         icon: 'success',
