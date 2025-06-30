@@ -981,6 +981,13 @@ html {
   display: block;
 }
 @media (max-width: 480px) {
+  .carousel-section{
+    padding: 0;
+  }
+  .mySwiper {
+    width: 100%;
+  }
+
   
   .swiper-slide {
     justify-content: center;
@@ -1154,7 +1161,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 12px;
+    padding: 0;
   }
 
   .offer {
@@ -1189,6 +1196,9 @@ html {
 
 /* Shrink nicely on phones */
 @media (max-width: 480px) {
+  .offers{
+    padding: 0;
+  }
   .offer { 
     min-height: 300px;
   }    
