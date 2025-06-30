@@ -239,6 +239,11 @@ background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
   border: none;
   cursor: pointer;
 }
+.btn:hover{
+  background: #000;
+  border:2px solid black;
+  color:#fff;
+}
 
 /*-----------------------------------------About section css start----------------------------------------*/
 #about{
