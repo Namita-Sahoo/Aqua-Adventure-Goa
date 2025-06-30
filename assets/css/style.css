@@ -240,25 +240,6 @@ background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
   cursor: pointer;
 }
 
-.dots {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.dot {
-  font-size: 3rem;
-  cursor: pointer;
-  margin: 0 8px;
-}
-.dot:focus {
-  outline: none;
-  box-shadow: 0 0 5px aqua;
-  transform: scale(1.2);
-  background-color: aqua;
-}
-
 /*-----------------------------------------About section css start----------------------------------------*/
 #about{
   scroll-margin-top: 70px;
