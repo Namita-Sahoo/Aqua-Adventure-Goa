@@ -8,6 +8,10 @@ window.addEventListener('scroll', function() {
     navbar.classList.remove('scrolled');
   }
 });
+function toggleNav() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("open");
+}
 
 
 document.getElementById("contactForm").addEventListener("submit", function(e) {
